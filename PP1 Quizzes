@@ -1,0 +1,363 @@
+#include<stdio.h>
+
+int main() {
+	//--------------------------Week-1_Simple-Quiz----------------------------------//
+
+	//1. answer: 6
+	/*
+	printf("%d", printf(""1 2 3\n));
+	*/
+
+	//2. answer:1.254
+	/*
+	double x = 1.2543;
+	printf("%.3lf", x);
+	*/
+
+	//3. answer: 12	
+	/*
+	printf("%d", sizeof(7/3) + sizeof(5.0/2));
+	*/
+
+	//4. answer:4
+	/*
+	printf("%d", printf("Hi!\n"));
+	*/
+
+	//5. answer: 7
+	/*
+	int a = 3. b = 11;
+	int res = b/a + b%a + (a<b) + (a!=b);
+	printf("%d", res)
+	*/
+
+	//6. answer: 3.77
+	/*
+	double x = 3.7657;
+	printf("%.2lf", x);
+	*/
+
+	//7. answer: 3
+	/*
+	int a = 7, b = 16;
+	int res = (a>b) + (b/2 > a) + (b/a);
+	printf("%d", res);
+	*/
+
+	//8. answer: 15
+	/*
+	printf("%d", printf("I am a student\n"));
+	*/
+
+	//9. answer: 14
+	/*
+	int a = 25;
+	printf("%d", sizeof(long long) + sizeof(a) + sizeof(short int));
+	*/
+
+	//10. answer: 2
+	/*
+	int a = 10, b = 5;
+	int res = (a<b) + (a!=b) + (a>b);
+	printf("%d", res);
+	*/
+
+	//11. answer: 9
+	/*
+	int a = 7, b=13;
+	int res = b/a + b%a + (a!=b) + (a>b/2);
+	printf("%d", res);
+	*/
+
+	//12. answer: -2
+	/*
+	int a = 8, b = 3, c = 5;
+	int res = a++ - --b - ++c;
+	printf("%d", res - b);
+	*/
+
+	//13. asnwer: 64
+	/*
+	long long a= 2;
+	printf("%d", sizeof(double) * sizeof(a));
+	*/
+
+	//14. answer: 9
+	/*
+	int a = 17, b = 6;
+	int res = (a>b) + (b%a) + (a/b);
+	printf("%d", res);
+	*/
+
+	//15. answer: 
+	/*
+	int a = 17, b = 6;
+	int res = a/b*b;
+	printf("%d", res);
+	*/
+
+	//16. answer: 9
+	/*
+	int a = 3, b = 3;
+	int res = a++ + --b;
+	printf("%d", a + res);
+	*/
+
+	//17. answer:3
+	/*
+	int a, b, c;
+	int i = scanf("%d %d %d", &a, &b, &c);
+	printf("%d", i);
+	*/
+
+	//18. answer: 21
+	/*
+	int a = 5, b = 8;
+	int res = ++a + b--;
+	printf("%d", b+ res);
+	*/
+
+	//19. answer: 16
+	/*
+	short int a = 25;
+	pritnf("%d", sizeof(double) * sizeof(a));
+	*/
+
+	//20. answer: 6
+	/*
+	short int a = 25;
+	printf("%d", sizeof(float) + sizeof(a));
+	*/
+
+	//21. answer: 20
+	/*
+	printf("%d", sizeof(100)+sizeof(100LL) + sizeof(100.0));
+	*/
+
+
+	//--------------------------Week-2_Simple-Quiz----------------------------------//
+
+	//1. answer:3
+	/*
+	int a = 5, b = 7, res;
+	res = (a > b/2) + (a/2 < b) + (++a == --b);
+	printf("%d", res);
+	*/
+
+	//2. answer: 8
+	/*
+	int a = 7;
+	if(++a > 7 || ++a > 6 || a++ > 2)
+		printf("YES");
+	else
+	printf("NO");
+	printf("%d", a);
+	*/
+
+	//3. answer: 7
+	/*
+	int x = 2;
+	swithc(x){
+	case 5: x = x+3;
+	default: x = x + 5;
+	}
+	printf("%d", x);
+	*/
+
+	//4. answer: 11
+	/*
+	int x = 4;
+	switch(x){
+	case 4: x = x+2;
+	default: x=x+5;
+	}
+	printf("%d", x);
+	*/
+
+	//5. answer: 11
+	/*
+	int a = 3, b = 7;
+	if(a != b || a == b)
+		prinf("%d", a + b+1);
+	else
+	  printf("%d", a*b);
+	*/
+
+	//6. answer: 7
+	/*
+	int x = 5;
+	switch(x){
+	case 4: x = x + 1;
+	break;
+	case 5: x = x + 1;
+	case 6: x = x + 1;
+	break;
+	case 7: x = x + 1;
+	break;
+	}
+	printf("%d", x);
+	*/
+
+	//7. answer: 2
+	/*
+	int a = 9, b = 10;
+	if(a++ != --b) a++; else --b;
+	printf("%d", a - b);
+	*/
+
+	//8. answer: -2
+	/*
+	int a = 3, b = 4, res;
+	res =  (a++ < --b) ? a + b : a - b;
+	printf("%d", res - b);
+	*/
+
+	//9. answer: 16
+	/*
+	int a = 7, b = 6;
+	if(a++ == ++b) ++a; else b--;
+	printf("%d", a + b);
+	*/
+
+	//10. answer: 2
+	/*
+	int a = 7, b = 3, res;
+	res = (a > b) + (a/2 > b) + (a != ++b);
+	printf("%d", res);
+	*/
+
+	//11. answer: 6
+	/*
+	int a = 5;
+	if(a++ > 5 && a++ > 6 && ++a > 7)
+	printf("YES");
+	else
+	printf("NO");
+	printf("%d", a);
+	*/
+
+	//12. answer: 565
+	/*
+	int x = 5;
+
+	switch (x)
+
+	{
+
+	case 5: printf("%d", x);
+
+	case 7: printf("%d", x + 1); break;
+
+	default: printf("%d", x + 2); break;
+
+	}
+
+	printf("%d\n",x);
+	*/
+
+	//13. answer: 3
+	/*
+	int x = 0;
+
+	switch (x)
+
+	{
+
+	case 1: x = x + 3;
+
+	case 0: x = x + 2;
+
+	case 2: x = x + 1;
+
+	)
+
+	printf("d\n",x);
+	*/
+
+	//14. answer: 7
+	/*
+	int a = 5;
+
+	if (a++ > 0 && a++ > 10 && a++ > 0) printf("YES\n");
+	else printf("NO\n");
+	printf("%d\n", a);
+	*/
+
+	//15. answer:20
+	/*
+	int x = 0;
+
+	switch (x){
+
+	case 1: printf("%d", x); break;
+	case 2: printf("%d", x + 1); break;
+	default: printf("%d", x + 2); break;
+
+	printf("%d\n",x);
+	*/
+
+	//16. answer: 673
+	/*
+	int x = 3;
+
+	switch (x){
+
+	case 1: printf("%d", x + 1);
+	case 2: printf("%d", x + 2);
+	case 3: printf("%d", x + 3);
+	default: printf("%d", x + 4); 
+
+	printf("%d\n",x);
+	*/
+
+	//17. answer: 23
+	/*
+	switch (5/2){
+
+	case 1: printf("1");
+
+	case 2: printf("2");
+
+	default: printf("3");
+	*/
+
+	//18. answer: 13
+	/*
+	int a = 4, b = 8;
+	if(a != b) a++; else --b;
+	printf("%d", a + b);
+	*/
+
+	//19. answer: 32
+	/*
+	int x = 2;
+
+	switch (x){
+
+	case 1: printf("%d", x);
+
+	break;
+
+	case 2: printf("%d", x + 1);
+
+	break;
+
+	default: printf("%d", x + 2); break;
+
+	}
+
+	printf("%d\n",x);
+	*/
+
+	//20. answer:3
+	/*
+	int a = 4, b = 8, res;
+	res = (a == b/2) + (2*a != --b) + (a + 3 == b);
+	printf("%d", res);
+	*/
+
+	//--------------------------Week-3_Simple-Quiz----------------------------------//
+
+
+}
+
