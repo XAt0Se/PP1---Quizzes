@@ -763,6 +763,56 @@ int main() {
 	printf("%d\n", res);
 	*/
 
+	//--------------------------Week-(5-6)_Simple-Quiz----------------------------------//
+
+	//1. answer: 1
+	/*
+	printf("%d", strcmp("arba", "abra"));
+	*/
+	
+	//2. asnwer: 6
+	/*
+	char a[100];
+	scanf("%s", a); //crocodile
+	scanf("%s", a); // cat
+	printf("%d", strlen(a+1) + strlen(a+5));
+	*/
+
+	//3. answer:6
+	/*
+	char a[] = "University";
+	printf("%d", strlen(a + 4));
+	*/
+
+	//4. asnwer: 5
+	/*
+	char a[100];
+	scanf("%s", a); //amazonka
+	scanf("%s", a); // dog
+	printf("%d", strlen(a+1) + strlen(a+5));
+	*/
+
+	//5. asnwer: Helloty
+	/*
+	char s[100] = "Hello";
+	char s[100] = "Kitty";
+	strcat(s+2, t+3);
+	puts(s);
+	*/
+
+	//6. asnwer: Helitty
+	/*
+	char s[100] = "Hello";
+	char s[100] = "Kitty";
+	strcpy(s+3, t+1);
+	puts(s);
+	*/
+
+	//7. answer: 0
+	/*
+	printf("%d", strncmp("abcdef", "abcxyz", 3));
+	*/
+
 
 	//--------------------------Week-11_Simple-Quiz----------------------------------//
 
