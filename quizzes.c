@@ -1896,3 +1896,180 @@ int main() {
 	//} 1
 
 	#pragma endregion
+#pragma region Graded Quiz 4
+	/*
+//1.answer: 9
+	/*
+	int* ptr =(int*)malloc(20);
+	for(int i=0; i<5; i++) ptr[i]=i+7;
+	printf("%d\n", *(ptr+2));
+	*/
+
+//2. answer: -16
+/*
+    double* p = (double*)calloc(100,sizeof(long long));
+    printf("%d\n", (char*)(p+1) - (char*)(p+3));
+*/
+
+
+//3. answer: 12
+/*
+    long long *p= (long long*)calloc(80, sizeof(long long));
+	for(long long i=0; i<10; i++) p[i]=i+1;
+	long long *q= p+5;
+	printf("%d\n", *(q-1) + *(q+1));
+*/
+	
+//4. answer: A
+/*
+Which of the following is the proper declaration of a pointer?
+    A.int *x;
+	B.int x;
+	C.int &x;
+	D.ptr *x;
+	E.ptr x;
+*/	
+
+//5. answer: 12
+/*
+    long long *p = (long long*)calloc(80, sizeof(long long));
+	for(long long i=0; i<10; i++) p[i]=i+1;
+	long long *q= p+5;
+	printf("%d\n", *(q-1) + *(q+1));
+
+*/
+
+//6. answer: -8
+/*
+    double* p=(double*)calloc(100, sizeof(long long));
+	printf("%d\n", (int*)(p+2) - (int*)(p+6));
+
+*/
+
+//7. answer: 12 
+/*
+    long long *p = (long long*)calloc(80, sizeof(long long));
+	printf("%d\n",(short int*)(p+4) - (short int*)(p+1));
+
+*/
+
+//8. answer: 8
+//What is the output for the next code(for 64-bit architecture)
+/*
+    int* p= (int*)malloc(100);
+	printf("%d\n", sizeof(p));
+
+*/
+
+//9. answer: A SORUSMUSAM
+/*
+Which of the following gives the value stored at the adress pointed to by pointer a?
+    A.*a
+	B.&a
+	C.a
+	D.address(a)
+	E.->a
+*/
+
+//10. answer: A
+/*
+What will be the output of the following C code? 
+   char s[]="hello";
+	char* p= s+3;
+	printf("%c %c\n", *(p+1), *(s+1));
+*/	
+/*
+	A.o e
+	B.e o
+	C.l h
+	D.o l
+	E.l o
+
+*/
+
+
+//11. answer: A
+/* 
+Combine the following two statements into one:
+    char* p;
+    p=(char*)malloc(100);
+*/	
+/*
+	A.char *p= (char*)malloc(100);
+	B.char p = *malloc(100);
+	C.char *p=(char) malloc(100);
+	D.char *p= (char *)(malloc *)(100);
+
+*/
+
+//12. answer: -36
+/*
+    struct Point
+	{
+		int x,y,z;
+	};
+	struct Point* p=(struct Point*)calloc(10, sizeof(Point));
+	printf("%d", (char*)&p[2] - (char*)&p[5]);
+*/
+
+//13. answer: A
+/*
+What is the size of a C sturcture?
+    A.Size of C structure is the total bytes of all elements of structure.
+	B.C structure is always 128 bytes.
+	C.Size of C structure is the size of largest element.
+	D.Size of C structure is the size of smallest element.
+	E.C structure is always 64 bytes.
+*/
+
+
+//14. answer: 80
+/*
+    union Person{
+		char name[80];
+		int x,y,z;
+		long long u;
+	}p;
+	printf("%d\n", sizeof(p));
+*/
+
+
+//15. answer: 96
+/*
+    struct Person{
+		char name[80];
+		int x,y;
+		double z;
+	};
+	printf("%d\n", sizeof(Person));
+*/
+
+//16. answer: 10
+/*
+    struct Point{
+		int x,y,z;
+	}p[10];
+	printf("%d\n", (short int *)&p[4].y - (short int *)&p[2].z);
+*/	
+
+//17.answer: 32
+/*
+    struct Point
+	{
+      int x,y;
+	};
+    struct Point* p = (struct Point*)calloc(20, sizeof(Point));
+	printf("%d\n", (char*)&p[7] - (char*)&p[3]);
+
+*/
+
+//18. answer: 28
+/*
+    struct Point{
+		int x,y,z;
+	}p[10];
+	printf("%d\n", (char *)&p[5].x - (char *)&p[2].z);
+*/	
+
+#pragma endregion
+*/
