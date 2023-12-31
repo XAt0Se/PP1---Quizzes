@@ -138,6 +138,7 @@ int main() {
 
 	//--------------------------Week-2_Simple-Quiz----------------------------------//
 
+
 	//1. answer:3
 	/*
 	int a = 5, b = 7, res;
@@ -241,16 +242,13 @@ int main() {
 	/*
 	int x = 5;
 
-	switch (x)
-
-	{
+	switch (x){
 
 	case 5: printf("%d", x);
 
 	case 7: printf("%d", x + 1); break;
 
 	default: printf("%d", x + 2); break;
-
 	}
 
 	printf("%d\n",x);
@@ -260,9 +258,7 @@ int main() {
 	/*
 	int x = 0;
 
-	switch (x)
-
-	{
+	switch (x){
 
 	case 1: x = x + 3;
 
@@ -577,7 +573,7 @@ int main() {
 	*/
 
 	//--------------------------Week-4_Simple-Quiz----------------------------------//
-	
+
 	//1. answer: 13
 	/*
 	int a[5] = {5 ,2, 7, 1, 6};
@@ -599,7 +595,7 @@ int main() {
 	//3. answer: 45
 	/*
 	int a[3][3] = {{1, 2, 3}, {4, 5, 6), (7, 8, 9} };
-	res = a[1][1] * a[2][2]; 
+	res = a[1][1] * a[2][2];
 	printf("%d\n", res);
 	*/
 
@@ -637,8 +633,8 @@ int main() {
 
 	for (i = 0; i < 4; i++)
 
-	if (a[i] < a[i+1]) res += a[i]; 
-	
+	if (a[i] < a[i+1]) res += a[i];
+
 	printf("%d\n", res);
 	*/
 
@@ -647,7 +643,7 @@ int main() {
 	int a[6] = {6, 1, 5, 5, 2, 8};
 
 	int res = 0;
-	
+
 	for (int i = 0; i < 5; i++) {
 		if ((a[i] + a[i + 1]) % 2 == 0) res++;
 	}
@@ -669,7 +665,7 @@ int main() {
 	//10. answer:82
 	/*
 	long long a[10];
-	res = sizeof(a) + sizeof(short int); 
+	res = sizeof(a) + sizeof(short int);
 	printf("%d\n", res);
 	*/
 
@@ -682,11 +678,11 @@ int main() {
 
 	//12. answer: 6
 	/*
-	int a[5] = {1, 2, 3, 4, 5); 
+	int a[5] = {1, 2, 3, 4, 5);
 	res = i = 0;
 
-	while (i < 3) 
-	res+=a[i++]; 
+	while (i < 3)
+	res+=a[i++];
 	printf("%d\n", res);
 	*/
 
@@ -694,7 +690,7 @@ int main() {
 	/*
 	int a[3] [3] = {{1, 2, 3}, {4, 5, 6}, {7,8,9} };
 
-	res = a[0][1] + a[2][2]; 
+	res = a[0][1] + a[2][2];
 	printf("%d\n", res);
 	*/
 
@@ -759,7 +755,7 @@ int main() {
 	res = 0;
 	for (i = 0; i < 4; i++)
 
-	if (a[i] > a[i+1]) res += a[i]; 
+	if (a[i] > a[i+1]) res += a[i];
 	printf("%d\n", res);
 	*/
 
@@ -769,7 +765,7 @@ int main() {
 	/*
 	printf("%d", strcmp("arba", "abra"));
 	*/
-	
+
 	//2. asnwer: 6
 	/*
 	char a[100];
@@ -813,734 +809,1090 @@ int main() {
 	printf("%d", strncmp("abcdef", "abcxyz", 3));
 	*/
 
+	//8. answer: Hety
+	/*
+	char s[100] = "Hello";
+	char t[100] = "Kitty";
+	strcpy(s+2, t+3);
+	puts(s);
+	*/
+
+	//9. answer: Helloitty
+	/*
+	char s[100] = "Hello";
+	char t[100] = "Kitty";
+	strcat(s+3, t+1);
+	puts(s);
+	*/
+
+	//10. answer: UnDAersity
+	/*
+	char s[100] = "University";
+	char t[100] = "ADA";
+	strncpy(s+2, t+1,2);
+	puts(s);
+	*/
+
+	//11. answer: 58
+	/*
+	char a[50];
+	res = sizeof(a) + sizeof(long long);
+	printf("%d", res);
+	*/
+
+	//12. answer:0
+	/*
+	printf("%d", strncmp("abra", "arba", 1));
+	*/
+
+	//13. answer: W
+	/*
+	char ch = 'Y';
+	printf("%c", ch - 2);
+	*/
+
+	//14. answer: - 1
+	/*
+	printf("%d", strcmp("abra", "cadabra"));
+	*/
+
+	//15. answer: 104
+	/*
+	char a[100];
+	res = sizeof(a) + sizeof(int);
+	printf("%d", res);
+
+	*/
+
+	//16. answer: 3
+	/*
+	char a[] = "Hello";
+	printf("%d", strlen(a+2));
+ 	*/
+
+	//17. answer:og
+	/*
+	char a[100];
+	scanf("%s", a); //amazonka
+	scanf("%s", a); //dog
+	puts(a+1);
+	*/
+
+	//18. answer: -1
+	/*
+	printf("%d", strcmp("abra", "arba"));
+	*/
+
+	//19. answer: ersity
+	/*
+	char a[] = "University";
+	puts(a+4);
+	*/
+
+	//20. answer: D
+	/*
+	char ch[] = 'B';
+	pritnf("%c", ch +2);
+	*/
+
+
+	//--------------------------Week-7_Simple-Quiz----------------------------------//
+
+	
+	//1. answer: 22
+	/*
+	int f(int a,  int b){
+	if(b == 0) return 0;
+	return f(a - 2, b - 1) + 1;
+	}
+
+	int main (){
+	
+	printf("%d", f(11,22));
+	}
+	*/
+
+	//2.  answer: 11
+	/*
+	int f(int a,  int b){
+	if(a == 0) return b;
+	return f(a - 1, b) + 1;
+	}
+
+	int main (){
+	
+	printf("%d", f(5,6));
+	}
+	*/
+
+	//3. answer:8
+	/*
+	int a =1, b = 1, c = 1;
+	void f(int a, int &b, int &c){
+	a++; b+=2; c+=3;
+	}
+
+	int main (){
+	f(a, b,c);
+	printf("%d", a + b + c);
+	}
+	*/
+
+	//4. answer: 15
+	/*
+	int g(int x){
+	return x+1;
+	}
+
+	int f(int x){
+	return g(x+2) * 3;
+	}
+
+	int main(){
+	printf("%d", f(2));
+	}
+	*/
+
+	//5. answer:0
+	/*
+	int y;
+	void (int x, int y){
+	y = y * x;
+	}
+
+	int main (){
+	f(5,4);
+	printf("%d", y);
+	}
+	*/
+
+	//6. answer: 15
+	/*
+	int f(int a, int b){
+	if( a == 0) return 0;
+	return f(a-2, b-1) + 3;
+	}
+
+	int main (){
+	printf("%d", f(10, 20));
+	}
+	*/
+
+	//7. answer:32
+	/*
+	int f(int x){
+	if(x == 0) return 1;
+	return f(x-1) * 2;
+	}
+
+	int main(){
+	printf("%d", f(5));
+	}
+	*/
+
+	//8. answer: 6
+	/*
+	int x;
+	void f(int a, int b){
+	x = a+ b;
+	}
+
+	int main (){
+	f(4,2);
+	printf("%d", x);
+	}
+	*/
+
+	//9. answer: 12
+	/*
+	int x;
+	void f(int a, int b){
+	x = a*b;
+	}
+
+	int main (){
+	f(4,3);
+	printf("%d", x);
+	}
+	*/
+	
+	//10. answer:1000
+	/*
+	int f(int x){
+	if(x == 0) return 0;
+	return f(x-1) + 2;
+	}
+
+	int main (){
+	printf("%d", f(500));
+	}
+	*/
+
+	//11. answer: 250
+	/*
+
+	int f(int a){
+	if (a <= 0) return 0;
+	return f(a - 2) + 1;
+	}
+
+	int main(){
+	printf("%d", f(500));
+	}
+	*/
+
+	//12. answer: 9
+	/*
+	int x = 3;
+	void g(int x){
+	::x = ++x;
+	}
+
+	void f(int x) {
+	g(::x + x);
+	}
+
+	int main(){
+	f(5);
+	printf("%d", x);
+	}
+	*/
+
+	//13. answer: 32
+	/*
+	int f(int a,  int b){
+	if(a == 0) return 1;
+	return f(a - 2, b) * b;
+	}
+
+	int main (){
+	
+	printf("%d", f(10,2));
+	}
+	*/
+
+	//14. answer: 9
+	/*
+	int a = 3, b = 5;
+	void f(int &a, int b){
+	a ++;
+	b ++;
+	}
+
+	int main (){
+	f(a, b);
+	printf("%d", a + b);
+	}
+	*/
+
+	//15. answer: 6
+	/*
+	int a=1, b=2, c=3;
+	void f(int &a, int b, int &c){
+	a = b; b = c; c = a;
+	}
+
+	int main (){
+	f(a, b, c);
+	printf("%d", a + b + c);
+	}
+	*/
+
+	//16. answer: 10
+	/*
+	int f(int a , int b){
+	return a * b;
+	}
+	
+	int main (){
+	
+	printf("%d", f(2,5));
+	}
+	*/
+
+	//17. answer: 35
+	/*
+	int a = 5;
+	void f(int &a){
+	a += ::a;
+	}
+
+	int main(){
+	int a = 2;
+	f(a);
+	printf("%d", a * ::a);
+
+	}
+	*/
+
+	//18. answer: 16
+	/*
+	int f(int a,  int b){
+	if(a == 0) return 1;
+	return f(a - 1, b) * b;
+	}
+
+	int main (){
+	
+	printf("%d", f(2, 4));
+	}
+	*/
+
+	//19. answer:120
+	/*
+	int f(int x){
+	if (x == 0) return 1;
+	return f(x-1) * x;
+	}
+	 
+	int main (){
+	printf("%d", f(5));
+	}
+	*/
+
+	//20. answer: 0
+	/*
+	int x;
+	void f(int x, int y){
+	x = x+y;
+	}
+
+	int main(){
+	f(4,3);
+	printf("%d", x);
+	}
+	*/
+
 
 	//--------------------------Week-11_Simple-Quiz----------------------------------//
 
+
 	//1. answer: r
 	// for "c" we calculate / take just the number that given, brifly 5th number (calculate from 0- first element)
-/*
-char m[] = "UniversityADA";
-printf("%c", *(m+5));
-*/
-
-//2. answer: x = 4, y = 2 cvb: 4,2   
-// just change value
-/*
-int x = 2, y = 4;
-void f(int* a, int* b){
-int temp = *b;
-*b = *a;
-*a = temp;
-}
-*/
-
-//3. answer: 8 
-//birinci biz d ve b ni p1 p2 ye veririk, sonra bir birinden cixilir b ve d int olduguna gore 4 e vurulur printf de char olduugna gore de 1 e bolunur
-/*
-int a = 2, b = 3, c = 4, d = 5;
-int* p1, *p2;
-p1 = &d;
-p2 = &b;
-printf("%d", (char*)p1 - (char*)p2);
-*/
-
-//4. answer: 1  
-// burda ilk ptr inde x- mertebe 2 vahid azaldir, menasi ptr=ptr-2 ama sonraki ise hemin memory adresindeki vaueni 2 vahid azaldir
-/*
-int a = 2, b = 3, c = 4, d = 5;
-int* ptr;
-ptr = &d;
-ptr -=2;
-(*ptr) -=2;  // *ptr= *ptr-2
-printf("%d", *ptr);
-*/
-
-// 5. answer: 4 
-// ilk once indexi mertebeni 1 vahid qaldirdiq(PASS THE NEXT VALUE) b den geldi c ye, IKINCI PTR DA da c nin qiymetini 1 vahid qaldirdiq
-/*
-int a,b = 1, c = 2, d;
-int* ptr;
-ptr = &b;
-*ptr++;
-(*ptr)++;
-printf("%d", b + c);
-*/
-
-//6. answer: 5
-// 48 - 8 = 40 olur sonrada alinan valueni 40 i printf deki size a doublin size na boluruk olur 40/8=5
-//  (M[48] ELE BIR BUNU 48 GOTURUK, O BIRINDE DE M+8 YENI 0+8 CUNKI M BURDA 0 CI ELEMTENDI)
-/*
-char m[100];
-printf("%d", (double*)&m[48] - (double*)(m+8));  // buna bolursen yani double a
-*/
-
-//7. answer: 10
-// m burda arrn 0 ci elementidi, ptr = m = 0 bizde 10 vahid artirirq olur 10 printf  de de 10 - 0= 10
-/*
-int m[100];
-int* ptr;
-ptr = m;
-for(int i = 0; i < 10; i++) ptr++;
-printf("%d", ptr - m);
-*/
-
-//8. answer: 2
-// p1- p2=> &d - &b => 5-3 
-/*
-int a = 2, b = 3, c = 4, d = 5;
-int* p1, *p2;
-p1 = &d;
-p2 = &b;
-printf("%d", p1-p2);
-
-*/
-
-//9. answer:3
-// &d - &a => 5 - 2 = 3
-/*
-double a = 2, b = 3, c = 4, d = 5;
-printf("%d", &d - &a);
-*/
-
-//10. answer: 16
-// burda qisa yol tapmaga her birin artma valusesini gel verilen valueye sonrada vur nece denedise ona:
-//  x 1 vahid y 2 vahid artir gelirik 1 in usdune bunu 1 + 1 + 2 = 4 indi burda eger printf("", x+y+z) olsa idi 4 *3 olardi
-// cunki hem x in qiymeti hem y hem de z in qiymeti 4 olur zincirleme kimi burdada y*z yeni 4*4 olur cabah 16 di 
-/*
-int x = 1, &y = x, &z = y;
-x++;
-y+=2;
-printf("%d", z*y);
-*/
-
-//11. answer: -3
-// bu ele &a - &d di hansiki sadece valueleri cixiriq yeni  2 - 5 = -3
-/*
-double a = 2, b = 3, c = 4, d = 5;
-double* p;
-p = &a;
-printf("%d", p - &d);
-*/
-
-//12. answer: 7
-// ilk once *ptr = *ptr - 2 yeni *ptr = &d - 2 => 3
-// sonra (*ptr) = (*ptr) - 2 yeni (*ptr) = &d - 2 => 3 - 2= 1
-// ama bizden ne isteyir baxaq b + c isdeyir bu da 3 + 4 du yeni cavah 7 di eger bizden *ptr isde se idi cavab 1 olardi 
-// burda onsuz verilen ptr larda aparilan processler b ve c nin qiymetine tesir elemedi o sadece d ni deyisdi
-/*
-int a = 2, b = 3, c = 4, d = 5;
-int* ptr;
-ptr = &d;
-*ptr -= 2;
-(*ptr) -= 2;
-printf("%d", b + c);
-*/
-
-//13. answer:10
-// arrr in 0 ci elementinden basdayir yeni U dan ta ki NULL u gorene qeder X i artirir bu da strlen in duzsutudu eslinde
-/*
-char m[100] = "University";
-char* p;
-int x = 0;
-for(p = m; *p; p++)x++;
-printf("%d", x);
-*/
-
-//14. answer: -4 
-// double di size i da 8 oldugundan cixib 8 e vururuq ve hemiseki kimi de int* verib oun size na bolluk
-// 2 - 4 = -2 , -2*8/4 = -4
-/*
-double a = 2, b = 3, c = 4, d = 5;
-int* p1, *p2;
-p1 = &a;
-p2 = &c;
-printf("%d", (int*)p1 - (int*)p2);
-
-*/
-
-//15. answer: 15 
-// 4*30/8 = 15 
-// yene eyni gedir  m  0 ci elementdi ptr = 10 buna gore de sonra da 10 u 20 vahid artiririq olur 30 
-// gelirik printf de ikinci hisseye burda m 0 di dedik ora 0 a getdi
-// 30 u veururuq int in size na yeni 4*30 sonrada bouruk double in size na 4*30/8 = 15
-
-/*
-int i, m[100];
-int* ptr;
-ptr = m + 10;
-for(int i = 10; i < 30; i++) ptr++;
-printf("%d", (double*)ptr - (double*)m);
-*/
-
-//16. answer: 21  
-// 7 + 7 + 7 burda zincirleme tesir hammisina tesir edir artim eyni zamanda 3 vahid artir heresi
-// ZINCIRLEME BAS VERIRI BUNA OXSAR SUALDA IZAH ELEMISEM
-/*
-int i = 4, &j=i, &k=j;
-i++; j++; k++;
-printf("%d", i + j + k);
-*/
-
-//17. answer:4
-// arrr in 6 ci elementinden basdayir yeni U dan ta ki NULL u gorene qeder X i artirir bu da strlen(M+6) in duzsutudu eslinde
-/*
-char m[100] = "University";
-char* p;
-int x = 0;
-for(p = m + 6; *p; p++)x++;
-printf("%d", x);
-*/
-
-//18. answer:i
-// for "c" we calculate / take just the number that given, brifly 2th number (calculate from 0- first element)
-/*
-char m[] = "UniversityADA";
-printf("%c", *(m+2));
-*/
-
-//19. answer:25
-// m 0 dir, ptr 15 di, 15 i 10 vahid artirirq olur 25, printf de de 25 - 0 yaziriq olur 25
-/*
-int i, m[100];
-int* ptr;
-ptr = m + 15;
-for(int i = 10; i < 20; i++) ptr++;
-printf("%d", ptr - m);
-*/
-
-//20. answer: 5 
-// cunki d ni goturur indexin azaldir fso
-// mertebe olaraq azalir qisaca sira ile c ve b
-/*
-int a = 1, b = 5, c = 3, d = 4;
-int* ptr;
-ptr = &d;
-for(int i = 0; i < 2; i++) ptr--;
-printf("%d", *ptr);
-*/
-
-//------------NOTE-------------//
-
-//*ptr++  => pass to the next variable
-// ptr++  => pass to the next variable
-//(*ptr)++  => increase value
-//*ptr-=2   => decrease value
-
-//-------------------------------//
-
-
-
-//--------------------------Week-12_Simple-Quiz----------------------------------//
-
-
-//1. answer: 112
-
-/*
-struct MY{
-char s[100];
-int x,y,z;
-};
-printf("%d", sizeof(MY));
-*/
-
-//2. answer: A
-
-/*
-Which of yhe following is a properly defined struct?
-
-A) struct a_struct {int a;};
-B) struct {int a;}
-C) struct a_struct {int a;}
-D) struct a_struct int a;
-*/
-
-//3. answer: 8
-
-/*
-union test{
-long long x;
-char arr[6];
-int y;
-};
-printf("%d", sizeof(test));
-*/
-
-//4. answer: 16
-
-/*
-union test{
-double x;
-char arr[16];
-short int y;
-};
-printf("%d", sizeof(test));
-*/
-
-//5. answer: 4
-
-/*
-struct point {
-int x,y,z;
-};
-struct point p = {1, 2, 3};
-printf("%d", p.x + p.z);
-*/
-
-//6. answer: 10
-
-/*
-struct point{
-int x, y;
-}a;
-
-a.x = 4; a.y = 6;
-printf("%d", a.x + a.y);
-*/
-
-//7. answer: 24
-
-/*
-struct Point{
-int x, y;
-};
-
-struct Point *p = (struct Point*)calloc(10, sizeof(Point));
-printf("%d", (char*)&p[5] - (char*)&p[2]);
-*/
-
-//8. answer: A
-
-/*
-Which of the following accesses a variable in strucure *b?
-
-A) b->var
-B) b.var
-C) b-var
-D) b>var
-
-*/
-
-//9. answer: A
-
-/*
-Which properly declares a variable of struct foo?
-
-A) struct foo var;
-B) struct foo;
-C) foo;
-D) int foo;
-
-*/
-
-//10. answer: -40
-
-/*
-struct Point{
-int x, y;
-};
-
-struct Point *p = (struct Point*)calloc(10, sizeof(Point));
-struct Pointer *q = p+2, *w = p+7;
-printf("%d", (char*)q - (char*)w);
-*/
-
-//11. answer: 46
-
-/*
-struct MY{
-char name[10];
-char surname[20];
-long long x, y;
-};
-
-printf("%d", sizeof(MY));
-
-*/
-
-//12. answer: A
-
-/*
---Consider the following struct. Which is the correct option to chanfe the ranging variable to 45?--
-
-struct video{
-char name[50];
-int ranking;
-};
-
-struct video cats = {"CatVid", 53};
-struct video *ptr = &cats;
-
-A) ptr-> renking = 45;
-B) ptr.ranking = 45;
-C) ranking -> ptr = 45;
-D) ptr = 45;
-
-*/
-
-//13. answer: -24
-
-/*
-struct Point{
-int x, y;
-};
-
-struct Point *p = (struct Point*)calloc(10, sizeof(Point));
-struct Pointer *q = p+2, *w = p+5;
-printf("%d", q - w);
-*/
-
-
-//14. answer: B
-
-/*
-Which of the following accesses a variable in structure b?
-
-A) b.var
-B) b->var
-C) b-var
-D) b>var
-
-*/
-
-//15. answer:D
-
-/*
-struct node
-{
-int i;
-
-float j;
-};
-struct node *s[10];
-
-The above declaration define 's' to be
-
-A) An array, each element of which is a pointer to a structure of type node
-
-B) A structure of 2 fields, each field being a pointer to an array of 10 elements
-
-C) A structure of 3 fields: an integer, a float, and an array of 10 elements
-
-D) An array, each element of which is a structure of type node.
-*/
-
-
-}
-
-
-
-
-
-
-
-
-
-
-#pragma region Graded Quiz 1
-
-/*1. int cnt = 2;
-for (int i = 2; i < 10; i++) {
-	cnt++;
-	if (i > 7) break;
-}
-printf("%d\n", cnt); 9 */
-
-/*2. int cnt = 1;
-for (int i = 35; i > 7; i--) {
-	switch (i)
-	{
-	case 15:
-		cnt += 15;
-		break;
-
-	case 10:
-		cnt += 10;
-		break;
-
-	case 7:
-		cnt += 7;
+	/*
+	char m[] = "UniversityADA";
+	printf("%c", *(m+5));
+	*/
+
+	//2. answer: x = 4, y = 2 cvb: 4,2   
+	// just change value
+	/*
+	int x = 2, y = 4;
+	void f(int* a, int* b){
+	int temp = *b;
+	*b = *a;
+	*a = temp;
 	}
-}
+	*/
 
-printf("%d\n", cnt); 26 */
+	//3. answer: 8 
+	//birinci biz d ve b ni p1 p2 ye veririk, sonra bir birinden cixilir b ve d int olduguna gore 4 e vurulur printf de char olduugna gore de 1 e bolunur
+	/*
+	int a = 2, b = 3, c = 4, d = 5;
+	int* p1, *p2;
+	p1 = &d;
+	p2 = &b;
+	printf("%d", (char*)p1 - (char*)p2);
+	*/
 
-/*3. int cnt = 0;
-for (int i = 10; i > 0; i--) {
-	cnt++;
-	i -= 2;
-}
-printf("%d\n", cnt); 4 */
+	//4. answer: 1  
+	// burda ilk ptr inde x- mertebe 2 vahid azaldir, menasi ptr=ptr-2 ama sonraki ise hemin memory adresindeki vaueni 2 vahid azaldir
+	/*
+	int a = 2, b = 3, c = 4, d = 5;
+	int* ptr;
+	ptr = &d;
+	ptr -=2;
+	(*ptr) -=2;  // *ptr= *ptr-2
+	printf("%d", *ptr);
+	*/
 
-/*4. int cnt = 4;
-for (int i = 10; i >= 2; i--) {
-	if (i % 3 > 1) cnt++;
-}
-printf("%d\n", cnt); 7 */
+	// 5. answer: 4 
+	// ilk once indexi mertebeni 1 vahid qaldirdiq(PASS THE NEXT VALUE) b den geldi c ye, IKINCI PTR DA da c nin qiymetini 1 vahid qaldirdiq
+	/*
+	int a,b = 1, c = 2, d;
+	int* ptr;
+	ptr = &b;
+	*ptr++;
+	(*ptr)++;
+	printf("%d", b + c);
+	*/
 
-/*5. int i = 17;
-for (; i; i--) {
-printf("Hello\n"); 17
-} */
+	//6. answer: 5
+	// 48 - 8 = 40 olur sonrada alinan valueni 40 i printf deki size a doublin size na boluruk olur 40/8=5
+	//  (M[48] ELE BIR BUNU 48 GOTURUK, O BIRINDE DE M+8 YENI 0+8 CUNKI M BURDA 0 CI ELEMTENDI)
+	/*
+	char m[100];
+	printf("%d", (double*)&m[48] - (double*)(m+8));  // buna bolursen yani double a
+	*/
 
-/*6. int a = 7, b = 2;
-int res = ++a + ++b;
-printf("%d\n", res + a); 19 */
+	//7. answer: 10
+	// m burda arrn 0 ci elementidi, ptr = m = 0 bizde 10 vahid artirirq olur 10 printf  de de 10 - 0= 10
+	/*
+	int m[100];
+	int* ptr;
+	ptr = m;
+	for(int i = 0; i < 10; i++) ptr++;
+	printf("%d", ptr - m);
+	*/
 
-/*7. int a = 3, b = 8;
-int res = (a % 2) + (a % b) + (b % a);
-printf("%d\n", res); 6 */
+	//8. answer: 2
+	// p1- p2=> &d - &b => 5-3 
+	/*
+	int a = 2, b = 3, c = 4, d = 5;
+	int* p1, *p2;
+	p1 = &d;
+	p2 = &b;
+	printf("%d", p1-p2);
 
-/*8. int a = 6, b = 13;
-int res = b / a + b % a + (a < b) + (a > b);
-printf("%d\n", res); 4 */
+	*/
 
-/*9. double x = 4.3757;
-printf("%.3lf\n", x); 4.376*/
+	//9. answer:3
+	// &d - &a => 5 - 2 = 3
+	/*
+	double a = 2, b = 3, c = 4, d = 5;
+	printf("%d", &d - &a);
+	*/
 
-/*10. printf("%.d\n", printf("ADA University\n")); 15 */
+	//10. answer: 16
+	// burda qisa yol tapmaga her birin artma valusesini gel verilen valueye sonrada vur nece denedise ona:
+	//  x 1 vahid y 2 vahid artir gelirik 1 in usdune bunu 1 + 1 + 2 = 4 indi burda eger printf("", x+y+z) olsa idi 4 *3 olardi
+	// cunki hem x in qiymeti hem y hem de z in qiymeti 4 olur zincirleme kimi burdada y*z yeni 4*4 olur cabah 16 di 
+	/*
+	int x = 1, &y = x, &z = y;
+	x++;
+	y+=2;
+	printf("%d", z*y);
+	*/
 
-/*12. float a[10];
-int res = sizeof(a) / sizeof(long long);
-printf("%.d\n", res); 5 */
+	//11. answer: -3
+	// bu ele &a - &d di hansiki sadece valueleri cixiriq yeni  2 - 5 = -3
+	/*
+	double a = 2, b = 3, c = 4, d = 5;
+	double* p;
+	p = &a;
+	printf("%d", p - &d);
+	*/
 
-/*13. int a[6] = { 5,2,7,1,6,2 };
-int res = 0;
-for (int i = 1; i < 5; i++) {
-	if (a[i] > a[i - 1]) res += a[i];
-}
-printf("%.d\n", res); 13 */
+	//12. answer: 7
+	// ilk once *ptr = *ptr - 2 yeni *ptr = &d - 2 => 3
+	// sonra (*ptr) = (*ptr) - 2 yeni (*ptr) = &d - 2 => 3 - 2= 1
+	// ama bizden ne isteyir baxaq b + c isdeyir bu da 3 + 4 du yeni cavah 7 di eger bizden *ptr isde se idi cavab 1 olardi 
+	// burda onsuz verilen ptr larda aparilan processler b ve c nin qiymetine tesir elemedi o sadece d ni deyisdi
+	/*
+	int a = 2, b = 3, c = 4, d = 5;
+	int* ptr;
+	ptr = &d;
+	*ptr -= 2;
+	(*ptr) -= 2;
+	printf("%d", b + c);
+	*/
 
-/*15. double a[10];
-int res = sizeof(a) / sizeof(int);
-printf("%.d\n", res);
-return 0; 20 */
+	//13. answer:10
+	// arrr in 0 ci elementinden basdayir yeni U dan ta ki NULL u gorene qeder X i artirir bu da strlen in duzsutudu eslinde
+	/*
+	char m[100] = "University";
+	char* p;
+	int x = 0;
+	for(p = m; *p; p++)x++;
+	printf("%d", x);
+	*/
 
-/*16. int a = 4, b = 9, res;
-res = (++a > --b - 4) ? a++ : --b;
-printf("%.d\n", res - a); - 1 */
+	//14. answer: -4 
+	// double di size i da 8 oldugundan cixib 8 e vururuq ve hemiseki kimi de int* verib oun size na bolluk
+	// 2 - 4 = -2 , -2*8/4 = -4
+	/*
+	double a = 2, b = 3, c = 4, d = 5;
+	int* p1, *p2;
+	p1 = &a;
+	p2 = &c;
+	printf("%d", (int*)p1 - (int*)p2);
 
-/*17. int a = 8;
-if (a++ > 7 || ++a >= 5 || a++ > 2) {
-	printf("YES\n");
-}
-else {
-	printf("NO\n");
-}
-printf("%.d\n", a); YES and 9 */
+	*/
 
-/*18. int a = 11, b = 7, res;
-if (a % 3 > b % 3) {
-	res = ++a * --b;
-}
-else {
-	res = --a / ++b;
-}
-printf("%.d\n", res); 72 */
+	//15. answer: 15 
+	// 4*30/8 = 15 
+	// yene eyni gedir  m  0 ci elementdi ptr = 10 buna gore de sonra da 10 u 20 vahid artiririq olur 30 
+	// gelirik printf de ikinci hisseye burda m 0 di dedik ora 0 a getdi
+	// 30 u veururuq int in size na yeni 4*30 sonrada bouruk double in size na 4*30/8 = 15
 
-/*19. int x = 7;
-switch (x) {
-case 7: x--;
-case 4: x--;
-default: x--;
-}
+	/*
+	int i, m[100];
+	int* ptr;
+	ptr = m + 10;
+	for(int i = 10; i < 30; i++) ptr++;
+	printf("%d", (double*)ptr - (double*)m);
+	*/
 
-printf("%.d\n", --x); 3 */
+	//16. answer: 21  
+	// 7 + 7 + 7 burda zincirleme tesir hammisina tesir edir artim eyni zamanda 3 vahid artir heresi
+	// ZINCIRLEME BAS VERIRI BUNA OXSAR SUALDA IZAH ELEMISEM
+	/*
+	int i = 4, &j=i, &k=j;
+	i++; j++; k++;
+	printf("%d", i + j + k);
+	*/
 
-/*20. int x = 10;
-switch (x) {
-case 7: x--;
-case 4: x--;
-default: x--;
-}
+	//17. answer:4
+	// arrr in 6 ci elementinden basdayir yeni U dan ta ki NULL u gorene qeder X i artirir bu da strlen(M+6) in duzsutudu eslinde
+	/*
+	char m[100] = "University";
+	char* p;
+	int x = 0;
+	for(p = m + 6; *p; p++)x++;
+	printf("%d", x);
+	*/
 
-printf("%.d\n", --x); 8 */
+	//18. answer:i
+	// for "c" we calculate / take just the number that given, brifly 2th number (calculate from 0- first element)
+	/*
+	char m[] = "UniversityADA";
+	printf("%c", *(m+2));
+	*/
 
-#pragma endregion
-//}
+	//19. answer:25
+	// m 0 dir, ptr 15 di, 15 i 10 vahid artirirq olur 25, printf de de 25 - 0 yaziriq olur 25
+	/*
+	int i, m[100];
+	int* ptr;
+	ptr = m + 15;
+	for(int i = 10; i < 20; i++) ptr++;
+	printf("%d", ptr - m);
+	*/
 
-#pragma region Graded Quiz 2
+	//20. answer: 5 
+	// cunki d ni goturur indexin azaldir fso
+	// mertebe olaraq azalir qisaca sira ile c ve b
+	/*
+	int a = 1, b = 5, c = 3, d = 4;
+	int* ptr;
+	ptr = &d;
+	for(int i = 0; i < 2; i++) ptr--;
+	printf("%d", *ptr);
+	*/
 
-//1. int a = 2, c = 3;
-//
-//int f(int a, int b) {
-//	return a + b + c;
-//}
-//
-//int main()
-//{
-//	printf("%d\n", f(1, 2));
-//} 6 
+	//------------NOTE-------------//
 
+	//*ptr++  => pass to the next variable
+	// ptr++  => pass to the next variable
+	//(*ptr)++  => increase value
+	//*ptr-=2   => decrease value
 
-//2. int f(int x) {
-//	if (x == 1) return x + 1;
-//	return f(x - 1) * 3;
-//}
-//
-//int main()
-//{
-//	printf("%d\n", f(3));
-//} 18
-
-
-//3. int f(int n) {
-//	while (n > 99) n /= 10;
-//	return n;
-//}
-//
-//int main()
-//{
-//	printf("%d\n", f(1234));
-//} 12 
-
-//4. int x = 1, y = 1;
-//
-//void f(int x) {
-//	x++; y++;
-//}
-//
-//int main() {
-//	f(5);
-//	printf("%d\n", x + y);
-//} 3
-
-//5. int f(int a, int b) {
-//	if (a == 2) return b++;
-//	return f(a - 1, b) + 3;
-//}
-//
-//int main()
-//{
-//	printf("%d\n", f(4, 10));
-//} 16
-
-//int f(int x) {
-//
-//	if (x == 0) return 0;
-//	return f(x - 1) * 532;
-//}
-//int main() {
-//	int x = 123456;
-//	f(x);
-//	printf("%d\n", f(x));
-//}
-
-//7. int f(int x) {
-//	if (x == 1) return x + 1;
-//	return f(x - 2) + 5;
-//}
-//
-//int main()
-//{
-//	printf("%d\n", f(9));
-//} 22 
-
-//8. int f(int a, int b) {
-//	if (a == 0) return 1;
-//	return f(a - 1, b) * 3;
-//}
-//
-//int main()
-//{
-//	printf("%d\n", f(2, 3));
-//} 9
-
-//9. int f(int a, int b) {
-//	if (a == 0) return b;
-//	if (b == 0) return a;
-//	return f(a - 1, b - 2);
-//}
-//
-//int main()
-//{
-//	printf("%d\n", f(10, 10));
-//} 5
-
-//10. int f(int n) {
-//	int cnt = 0;
-//	while (n > 0) {
-//		cnt++;
-//		n /= 10;
-//	}
-//	return cnt;
-//}
-//
-//int main()
-//{
-//	printf("%d\n", f(1234));
-//} 4
+	//-------------------------------//
 
 
-//11. int main()
-//{
-//	char a[] = "Crocodile";
-//	a[5] = '0';
-//	printf("%d\n", strlen(a + 2));
-//} 7
+
+	//--------------------------Week-12_Simple-Quiz----------------------------------//
 
 
-//12. int main()
-//{
-//	char a[] = "ADA Uni";
-//	printf("%d\n", strlen(a + 3));
-//} 4
+	//1. answer: 112
 
-//13. int main()
-//{
-//	char s[100] = "home";
-//	char t[100] = "student";
-//	strcat(s + 2, t + 4);
-//	puts(s);
-//} homeent
+	/*
+	struct MY{
+	char s[100];
+	int x,y,z;
+	};
+	printf("%d", sizeof(MY));
+	*/
 
-//14. int main()
-//{
-//	char s[100] = "table";
-//	char t[100] = "chair";
-//	strncat(s + 2, t + 3, 2);
-//	puts(s);
-//} tableir
+	//2. answer: A
+
+	/*
+	Which of yhe following is a properly defined struct?
+
+	A) struct a_struct {int a;};
+	B) struct {int a;}
+	C) struct a_struct {int a;}
+	D) struct a_struct int a;
+	*/
+
+	//3. answer: 8
+
+	/*
+	union test{
+	long long x;
+	char arr[6];
+	int y;
+	};
+	printf("%d", sizeof(test));
+	*/
+
+	//4. answer: 16
+
+	/*
+	union test{
+	double x;
+	char arr[16];
+	short int y;
+	};
+	printf("%d", sizeof(test));
+	*/
+
+	//5. answer: 4
+
+	/*
+	struct point {
+	int x,y,z;
+	};
+	struct point p = {1, 2, 3};
+	printf("%d", p.x + p.z);
+	*/
+
+	//6. answer: 10
+
+	/*
+	struct point{
+	int x, y;
+	}a;
+
+	a.x = 4; a.y = 6;
+	printf("%d", a.x + a.y);
+	*/
+
+	//7. answer: 24
+
+	/*
+	struct Point{
+	int x, y;
+	};
+
+	struct Point *p = (struct Point*)calloc(10, sizeof(Point));
+	printf("%d", (char*)&p[5] - (char*)&p[2]);
+	*/
+
+	//8. answer: A
+
+	/*
+	Which of the following accesses a variable in strucure *b?
+
+	A) b->var
+	B) b.var
+	C) b-var
+	D) b>var
+
+	*/
+
+	//9. answer: A
+
+	/*
+	Which properly declares a variable of struct foo?
+
+	A) struct foo var;
+	B) struct foo;
+	C) foo;
+	D) int foo;
+
+	*/
+
+	//10. answer: -40
+
+	/*
+	struct Point{
+	int x, y;
+	};
+
+	struct Point *p = (struct Point*)calloc(10, sizeof(Point));
+	struct Pointer *q = p+2, *w = p+7;
+	printf("%d", (char*)q - (char*)w);
+	*/
+
+	//11. answer: 46
+
+	/*
+	struct MY{
+	char name[10];
+	char surname[20];
+	long long x, y;
+	};
+
+	printf("%d", sizeof(MY));
+
+	*/
+
+	//12. answer: A
+
+	/*
+	--Consider the following struct. Which is the correct option to chanfe the ranging variable to 45?--
+
+	struct video{
+	char name[50];
+	int ranking;
+	};
+
+	struct video cats = {"CatVid", 53};
+	struct video *ptr = &cats;
+
+	A) ptr-> renking = 45;
+	B) ptr.ranking = 45;
+	C) ranking -> ptr = 45;
+	D) ptr = 45;
+
+	*/
+
+	//13. answer: -24
+
+	/*
+	struct Point{
+	int x, y;
+	};
+
+	struct Point *p = (struct Point*)calloc(10, sizeof(Point));
+	struct Pointer *q = p+2, *w = p+5;
+	printf("%d", q - w);
+	*/
 
 
-//15. int main()
-//{
-//	char s[100] = "cat";
-//	char t[100] = "student";
-//	strncat(s + 1, t + 3, 2);
-//	puts(s);
-//} catde
+	//14. answer: B
 
-//16. int main()
-//{
-//	printf("%d\n", strncmp("camp", "can", 3));
-//} -1
+	/*
+	Which of the following accesses a variable in structure b?
 
-//17. int main()
-//{
-//	char a[50];
-//	int res = sizeof(a) * sizeof(int);
-//	printf("%d\n", res);
-//} 200
+	A) b.var
+	B) b->var
+	C) b-var
+	D) b>var
 
-//18. int main()
-//{
-//	char s[100] = "cool";
-//	char t[100] = "weather";
-//	strcat(s + 1, t + 4);
-//	puts(s);
-//} coolher
+	*/
 
-//19. int main()
-//{
-//	char a[100];
-//	scanf("%s", a); // amazonka;
-//	scanf("%s", a); // site;
-//	printf("%d\n", strlen(a + 2) * strlen(a + 5));
-//} 6
+	//15. answer:D
 
-//20. int main()
-//{
-//	printf("%d\n", strcmp("camp", "cam"));
-//} 1
+	/*
+	struct node
+	{
+	int i;
 
-#pragma endregion
+	float j;
+	};
+	struct node *s[10];
+
+	The above declaration define 's' to be
+
+	A) An array, each element of which is a pointer to a structure of type node
+
+	B) A structure of 2 fields, each field being a pointer to an array of 10 elements
+
+	C) A structure of 3 fields: an integer, a float, and an array of 10 elements
+
+	D) An array, each element of which is a structure of type node.
+	*/
+
+
+	}
+
+
+
+
+
+//<---------------------------------------------------//GRADED//--------------------------------------------------->
+
+
+
+
+
+	#pragma region Graded Quiz 1
+
+	/*1. int cnt = 2;
+	for (int i = 2; i < 10; i++) {
+		cnt++;
+		if (i > 7) break;
+	}
+	printf("%d\n", cnt); 9 */
+
+	/*2. int cnt = 1;
+	for (int i = 35; i > 7; i--) {
+		switch (i)
+		{
+		case 15:
+			cnt += 15;
+			break;
+
+		case 10:
+			cnt += 10;
+			break;
+
+		case 7:
+			cnt += 7;
+		}
+	}
+
+	printf("%d\n", cnt); 26 */
+
+	/*3. int cnt = 0;
+	for (int i = 10; i > 0; i--) {
+		cnt++;
+		i -= 2;
+	}
+	printf("%d\n", cnt); 4 */
+
+	/*4. int cnt = 4;
+	for (int i = 10; i >= 2; i--) {
+		if (i % 3 > 1) cnt++;
+	}
+	printf("%d\n", cnt); 7 */
+
+	/*5. int i = 17;
+	for (; i; i--) {
+	printf("Hello\n"); 17
+	} */
+
+	/*6. int a = 7, b = 2;
+	int res = ++a + ++b;
+	printf("%d\n", res + a); 19 */
+
+	/*7. int a = 3, b = 8;
+	int res = (a % 2) + (a % b) + (b % a);
+	printf("%d\n", res); 6 */
+
+	/*8. int a = 6, b = 13;
+	int res = b / a + b % a + (a < b) + (a > b);
+	printf("%d\n", res); 4 */
+
+	/*9. double x = 4.3757;
+	printf("%.3lf\n", x); 4.376*/
+
+	/*10. printf("%.d\n", printf("ADA University\n")); 15 */
+
+	/*12. float a[10];
+	int res = sizeof(a) / sizeof(long long);
+	printf("%.d\n", res); 5 */
+
+	/*13. int a[6] = { 5,2,7,1,6,2 };
+	int res = 0;
+	for (int i = 1; i < 5; i++) {
+		if (a[i] > a[i - 1]) res += a[i];
+	}
+	printf("%.d\n", res); 13 */
+
+	/*15. double a[10];
+	int res = sizeof(a) / sizeof(int);
+	printf("%.d\n", res);
+	return 0; 20 */
+
+	/*16. int a = 4, b = 9, res;
+	res = (++a > --b - 4) ? a++ : --b;
+	printf("%.d\n", res - a); - 1 */
+
+	/*17. int a = 8;
+	if (a++ > 7 || ++a >= 5 || a++ > 2) {
+		printf("YES\n");
+	}
+	else {
+		printf("NO\n");
+	}
+	printf("%.d\n", a); YES and 9 */
+
+	/*18. int a = 11, b = 7, res;
+	if (a % 3 > b % 3) {
+		res = ++a * --b;
+	}
+	else {
+		res = --a / ++b;
+	}
+	printf("%.d\n", res); 72 */
+
+	/*19. int x = 7;
+	switch (x) {
+	case 7: x--;
+	case 4: x--;
+	default: x--;
+	}
+
+	printf("%.d\n", --x); 3 */
+
+	/*20. int x = 10;
+	switch (x) {
+	case 7: x--;
+	case 4: x--;
+	default: x--;
+	}
+
+	printf("%.d\n", --x); 8 */
+
+	#pragma endregion
+	//}
+
+	#pragma region Graded Quiz 2
+
+	//1. int a = 2, c = 3;
+	//
+	//int f(int a, int b) {
+	//	return a + b + c;
+	//}
+	//
+	//int main()
+	//{
+	//	printf("%d\n", f(1, 2));
+	//} 6 
+
+
+	//2. int f(int x) {
+	//	if (x == 1) return x + 1;
+	//	return f(x - 1) * 3;
+	//}
+	//
+	//int main()
+	//{
+	//	printf("%d\n", f(3));
+	//} 18
+
+
+	//3. int f(int n) {
+	//	while (n > 99) n /= 10;
+	//	return n;
+	//}
+	//
+	//int main()
+	//{
+	//	printf("%d\n", f(1234));
+	//} 12 
+
+	//4. int x = 1, y = 1;
+	//
+	//void f(int x) {
+	//	x++; y++;
+	//}
+	//
+	//int main() {
+	//	f(5);
+	//	printf("%d\n", x + y);
+	//} 3
+
+	//5. int f(int a, int b) {
+	//	if (a == 2) return b++;
+	//	return f(a - 1, b) + 3;
+	//}
+	//
+	//int main()
+	//{
+	//	printf("%d\n", f(4, 10));
+	//} 16
+
+	//int f(int x) {
+	//
+	//	if (x == 0) return 0;
+	//	return f(x - 1) * 532;
+	//}
+	//int main() {
+	//	int x = 123456;
+	//	f(x);
+	//	printf("%d\n", f(x));
+	//}
+
+	//7. int f(int x) {
+	//	if (x == 1) return x + 1;
+	//	return f(x - 2) + 5;
+	//}
+	//
+	//int main()
+	//{
+	//	printf("%d\n", f(9));
+	//} 22 
+
+	//8. int f(int a, int b) {
+	//	if (a == 0) return 1;
+	//	return f(a - 1, b) * 3;
+	//}
+	//
+	//int main()
+	//{
+	//	printf("%d\n", f(2, 3));
+	//} 9
+
+	//9. int f(int a, int b) {
+	//	if (a == 0) return b;
+	//	if (b == 0) return a;
+	//	return f(a - 1, b - 2);
+	//}
+	//
+	//int main()
+	//{
+	//	printf("%d\n", f(10, 10));
+	//} 5
+
+	//10. int f(int n) {
+	//	int cnt = 0;
+	//	while (n > 0) {
+	//		cnt++;
+	//		n /= 10;
+	//	}
+	//	return cnt;
+	//}
+	//
+	//int main()
+	//{
+	//	printf("%d\n", f(1234));
+	//} 4
+
+
+	//11. int main()
+	//{
+	//	char a[] = "Crocodile";
+	//	a[5] = '0';
+	//	printf("%d\n", strlen(a + 2));
+	//} 7
+
+
+	//12. int main()
+	//{
+	//	char a[] = "ADA Uni";
+	//	printf("%d\n", strlen(a + 3));
+	//} 4
+
+	//13. int main()
+	//{
+	//	char s[100] = "home";
+	//	char t[100] = "student";
+	//	strcat(s + 2, t + 4);
+	//	puts(s);
+	//} homeent
+
+	//14. int main()
+	//{
+	//	char s[100] = "table";
+	//	char t[100] = "chair";
+	//	strncat(s + 2, t + 3, 2);
+	//	puts(s);
+	//} tableir
+
+
+	//15. int main()
+	//{
+	//	char s[100] = "cat";
+	//	char t[100] = "student";
+	//	strncat(s + 1, t + 3, 2);
+	//	puts(s);
+	//} catde
+
+	//16. int main()
+	//{
+	//	printf("%d\n", strncmp("camp", "can", 3));
+	//} -1
+
+	//17. int main()
+	//{
+	//	char a[50];
+	//	int res = sizeof(a) * sizeof(int);
+	//	printf("%d\n", res);
+	//} 200
+
+	//18. int main()
+	//{
+	//	char s[100] = "cool";
+	//	char t[100] = "weather";
+	//	strcat(s + 1, t + 4);
+	//	puts(s);
+	//} coolher
+
+	//19. int main()
+	//{
+	//	char a[100];
+	//	scanf("%s", a); // amazonka;
+	//	scanf("%s", a); // site;
+	//	printf("%d\n", strlen(a + 2) * strlen(a + 5));
+	//} 6
+
+	//20. int main()
+	//{
+	//	printf("%d\n", strcmp("camp", "cam"));
+	//} 1
+
+	#pragma endregion
