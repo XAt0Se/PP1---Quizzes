@@ -1961,7 +1961,7 @@ Which of the following is the proper declaration of a pointer?
 
 */
 
-//9. answer: A SORUSMUSAM
+//9. answer: A 
 /*
 Which of the following gives the value stored at the adress pointed to by pointer a?
     A.*a
