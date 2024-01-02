@@ -1541,7 +1541,7 @@ int main() {
 	*/
 
 
-	//14. answer: B
+	//14. answer: A
 
 	/*
 	Which of the following accesses a variable in structure b?
@@ -1553,7 +1553,7 @@ int main() {
 
 	*/
 
-	//15. answer:D
+	//15. answer:A
 
 	/*
 	struct node
@@ -1766,7 +1766,7 @@ int main() {
 	//	printf("%d\n", f(4, 10));
 	//} 16
 
-	//int f(int x) {
+	//6.int f(int x) {
 	//
 	//	if (x == 0) return 0;
 	//	return f(x - 1) * 532;
@@ -1775,7 +1775,7 @@ int main() {
 	//	int x = 123456;
 	//	f(x);
 	//	printf("%d\n", f(x));
-	//}
+	//} // 0
 
 	//7. int f(int x) {
 	//	if (x == 1) return x + 1;
