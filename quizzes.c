@@ -2073,3 +2073,135 @@ What is the size of a C sturcture?
 
 #pragma endregion
 */
+
+#pragma region Midterm
+int main() {
+
+	/*1. char s[100] = "university";
+	char t[100] = "school";
+	strncpy(s + 2, t + 1, 3);
+	puts(s); unchorsity */
+
+	/*2. char a[] = "crocodile";
+	a[5] = 0;
+	printf("%d\n", strlen(a + 2)); 3 */
+
+	/*3. char s[100] = "school";
+	char t[100] = "chair";
+	strncpy(s + 1, t + 1, 2);
+	puts(s); shaool */
+
+	// 4. printf("%d\n", strncmp("camp", "camping", 4)) 0;
+
+	// 5. printf("%d\n", strcmp("camp", "cam")); 1;
+
+	/*6. int a = 2, c = 3;
+
+	int f(int a, int b) {
+		return a + b + c;
+	}
+
+	int main() {
+		printf("%d\n", f(1, 2));
+	} 6 */
+
+	/*7. int x = 2, y = 3;
+
+	void f(void) {
+		x++; y++;
+	}
+
+	int main() {
+		f();
+		printf("%d\n", x + y);
+	} 7 */
+
+	/*8. int x = 1, y = 1;
+
+	void f(int x) {
+		x++; y++;
+	}
+
+	int main() {
+		f(5);
+		printf("%d\n", x + y);
+	} 3 */
+
+
+	/*9. int f(int n) {
+		int cnt = 0;
+		while (n > 0) {
+			cnt += n % 10;
+			n /= 10;
+		}
+		return cnt;
+	}
+
+	int main() {
+		printf("%d\n", f(1234));
+	} 10 */
+
+	/*10. int f(int a, int b) {
+		if (a == 0) return b;
+		return f(a - 1, b) * 2;
+	}
+
+	int main() {
+		printf("%d\n", f(3, 4));
+	} 32 */
+
+	/*11. float a[5];
+	int res = sizeof(a) * sizeof(double);
+	printf("%d\n", res); 160 */
+
+	/*12. int a[6] = { 7,4,6,10,6,5 };
+	int res = 0;
+	for (int i = 2; i < 6; i++)
+		if (a[i] > a[i - 1]) res += a[i - 1];
+
+	printf("%d\n", res); 10 */
+
+	/*13. int a[5] = { 1,2,3,4,5 };
+	int res = a[i] + a[3];
+	printf("%d\n", res); 6 */
+
+	/*14. int a[6] = { 7,9,6,3,5,8 };
+	int res = 2;
+	for (int i = 1; i < 5; i++)
+		if (a[i - 1] > a[i + 1]) res += a[i];
+
+	printf("%d\n", res); 20 */
+
+	/*16. int a = 3, b = 8;
+	int res = (a % 2) + (a % b) + (b % a);
+	printf("%d\n", res); 6 */
+
+	/*17. int i = 9, cnt = 0;
+	while (i >= 4) {
+		i--;
+		cnt += 3;
+	}
+	printf("%d\n", cnt); 18 */
+
+	/*18. int cnt = 5;
+	for (int i = 3; i < 10; i += 2)
+		cnt += 3;
+	printf("%d\n", cnt); 17 */
+
+	/*19. int a = 5;
+	if (a++ > 5 && ++a >= 5 && a++ > 5)
+		printf("YES\n");
+	else
+		printf("NO\n");
+
+	printf("%d\n", a); 6 */
+
+	/*20. int a = 8;
+	if (a++ > 7 || ++a >= 5 || a++ > 2)
+		printf("YES\n");
+	else
+		printf("NO\n");
+
+	printf("%d\n", a); 9 */
+}
+#pragma endregion
