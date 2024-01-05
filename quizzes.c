@@ -10,12 +10,12 @@ int main() {
 	*/
 
 	//2. answer:1.254
-	/*
+	/* nnnn
 	double x = 1.2543;
 	printf("%.3lf", x);
 	*/
 
-	//3. answer: 12	
+	//3. answer: 12
 	/*
 	printf("%d", sizeof(7/3) + sizeof(5.0/2));
 	*/
@@ -90,7 +90,7 @@ int main() {
 	printf("%d", res);
 	*/
 
-	//15. answer: 
+	//15. answer:
 	/*
 	int a = 17, b = 6;
 	int res = a/b*b;
@@ -714,7 +714,7 @@ int main() {
 	printf("%d\n", res);
 	*/
 
-	//16. answer: 8 
+	//16. answer: 8
 	/*
 	int a[10]={1,2,3,4,5,6,7,8,9,10);
 
@@ -898,7 +898,7 @@ int main() {
 
 	//--------------------------Week-7_Simple-Quiz----------------------------------//
 
-	
+
 	//1. answer: 22
 	/*
 	int f(int a,  int b){
@@ -907,7 +907,7 @@ int main() {
 	}
 
 	int main (){
-	
+
 	printf("%d", f(11,22));
 	}
 	*/
@@ -920,7 +920,7 @@ int main() {
 	}
 
 	int main (){
-	
+
 	printf("%d", f(5,6));
 	}
 	*/
@@ -1015,7 +1015,7 @@ int main() {
 	printf("%d", x);
 	}
 	*/
-	
+
 	//10. answer:1000
 	/*
 	int f(int x){
@@ -1066,7 +1066,7 @@ int main() {
 	}
 
 	int main (){
-	
+
 	printf("%d", f(10,2));
 	}
 	*/
@@ -1103,9 +1103,9 @@ int main() {
 	int f(int a , int b){
 	return a * b;
 	}
-	
+
 	int main (){
-	
+
 	printf("%d", f(2,5));
 	}
 	*/
@@ -1133,7 +1133,7 @@ int main() {
 	}
 
 	int main (){
-	
+
 	printf("%d", f(2, 4));
 	}
 	*/
@@ -1144,7 +1144,7 @@ int main() {
 	if (x == 0) return 1;
 	return f(x-1) * x;
 	}
-	 
+
 	int main (){
 	printf("%d", f(5));
 	}
@@ -1174,7 +1174,7 @@ int main() {
 	printf("%c", *(m+5));
 	*/
 
-	//2. answer: x = 4, y = 2 cvb: 4,2   
+	//2. answer: x = 4, y = 2 cvb: 4,2
 	// just change value
 	/*
 	int x = 2, y = 4;
@@ -1185,7 +1185,7 @@ int main() {
 	}
 	*/
 
-	//3. answer: 8 
+	//3. answer: 8
 	//birinci biz d ve b ni p1 p2 ye veririk, sonra bir birinden cixilir b ve d int olduguna gore 4 e vurulur printf de char olduugna gore de 1 e bolunur
 	/*
 	int a = 2, b = 3, c = 4, d = 5;
@@ -1195,7 +1195,7 @@ int main() {
 	printf("%d", (char*)p1 - (char*)p2);
 	*/
 
-	//4. answer: 1  
+	//4. answer: 1
 	// burda ilk ptr inde x- mertebe 2 vahid azaldir, menasi ptr=ptr-2 ama sonraki ise hemin memory adresindeki vaueni 2 vahid azaldir
 	/*
 	int a = 2, b = 3, c = 4, d = 5;
@@ -1206,7 +1206,7 @@ int main() {
 	printf("%d", *ptr);
 	*/
 
-	// 5. answer: 4 
+	// 5. answer: 4
 	// ilk once indexi mertebeni 1 vahid qaldirdiq(PASS THE NEXT VALUE) b den geldi c ye, IKINCI PTR DA da c nin qiymetini 1 vahid qaldirdiq
 	/*
 	int a,b = 1, c = 2, d;
@@ -1236,7 +1236,7 @@ int main() {
 	*/
 
 	//8. answer: 2
-	// p1- p2=> &d - &b => 5-3 
+	// p1- p2=> &d - &b => 5-3
 	/*
 	int a = 2, b = 3, c = 4, d = 5;
 	int* p1, *p2;
@@ -1256,7 +1256,7 @@ int main() {
 	//10. answer: 16
 	// burda qisa yol tapmaga her birin artma valusesini gel verilen valueye sonrada vur nece denedise ona:
 	//  x 1 vahid y 2 vahid artir gelirik 1 in usdune bunu 1 + 1 + 2 = 4 indi burda eger printf("", x+y+z) olsa idi 4 *3 olardi
-	// cunki hem x in qiymeti hem y hem de z in qiymeti 4 olur zincirleme kimi burdada y*z yeni 4*4 olur cabah 16 di 
+	// cunki hem x in qiymeti hem y hem de z in qiymeti 4 olur zincirleme kimi burdada y*z yeni 4*4 olur cabah 16 di
 	/*
 	int x = 1, &y = x, &z = y;
 	x++;
@@ -1276,7 +1276,7 @@ int main() {
 	//12. answer: 7
 	// ilk once *ptr = *ptr - 2 yeni *ptr = &d - 2 => 3
 	// sonra (*ptr) = (*ptr) - 2 yeni (*ptr) = &d - 2 => 3 - 2= 1
-	// ama bizden ne isteyir baxaq b + c isdeyir bu da 3 + 4 du yeni cavah 7 di eger bizden *ptr isde se idi cavab 1 olardi 
+	// ama bizden ne isteyir baxaq b + c isdeyir bu da 3 + 4 du yeni cavah 7 di eger bizden *ptr isde se idi cavab 1 olardi
 	// burda onsuz verilen ptr larda aparilan processler b ve c nin qiymetine tesir elemedi o sadece d ni deyisdi
 	/*
 	int a = 2, b = 3, c = 4, d = 5;
@@ -1297,7 +1297,7 @@ int main() {
 	printf("%d", x);
 	*/
 
-	//14. answer: -4 
+	//14. answer: -4
 	// double di size i da 8 oldugundan cixib 8 e vururuq ve hemiseki kimi de int* verib oun size na bolluk
 	// 2 - 4 = -2 , -2*8/4 = -4
 	/*
@@ -1309,9 +1309,9 @@ int main() {
 
 	*/
 
-	//15. answer: 15 
-	// 4*30/8 = 15 
-	// yene eyni gedir  m  0 ci elementdi ptr = 10 buna gore de sonra da 10 u 20 vahid artiririq olur 30 
+	//15. answer: 15
+	// 4*30/8 = 15
+	// yene eyni gedir  m  0 ci elementdi ptr = 10 buna gore de sonra da 10 u 20 vahid artiririq olur 30
 	// gelirik printf de ikinci hisseye burda m 0 di dedik ora 0 a getdi
 	// 30 u veururuq int in size na yeni 4*30 sonrada bouruk double in size na 4*30/8 = 15
 
@@ -1323,7 +1323,7 @@ int main() {
 	printf("%d", (double*)ptr - (double*)m);
 	*/
 
-	//16. answer: 21  
+	//16. answer: 21
 	// 7 + 7 + 7 burda zincirleme tesir hammisina tesir edir artim eyni zamanda 3 vahid artir heresi
 	// ZINCIRLEME BAS VERIRI BUNA OXSAR SUALDA IZAH ELEMISEM
 	/*
@@ -1359,7 +1359,7 @@ int main() {
 	printf("%d", ptr - m);
 	*/
 
-	//20. answer: 5 
+	//20. answer: 5
 	// cunki d ni goturur indexin azaldir fso
 	// mertebe olaraq azalir qisaca sira ile c ve b
 	/*
@@ -1721,7 +1721,7 @@ int main() {
 	//int main()
 	//{
 	//	printf("%d\n", f(1, 2));
-	//} 6 
+	//} 6
 
 
 	//2. int f(int x) {
@@ -1743,7 +1743,7 @@ int main() {
 	//int main()
 	//{
 	//	printf("%d\n", f(1234));
-	//} 12 
+	//} 12
 
 	//4. int x = 1, y = 1;
 	//
@@ -1785,7 +1785,7 @@ int main() {
 	//int main()
 	//{
 	//	printf("%d\n", f(9));
-	//} 22 
+	//} 22
 
 	//8. int f(int a, int b) {
 	//	if (a == 0) return 1;
@@ -1919,7 +1919,7 @@ int main() {
 	long long *q= p+5;
 	printf("%d\n", *(q-1) + *(q+1));
 */
-	
+
 //4. answer: A
 /*
 Which of the following is the proper declaration of a pointer?
@@ -1928,7 +1928,7 @@ Which of the following is the proper declaration of a pointer?
 	C.int &x;
 	D.ptr *x;
 	E.ptr x;
-*/	
+*/
 
 //5. answer: 12
 /*
@@ -1946,7 +1946,7 @@ Which of the following is the proper declaration of a pointer?
 
 */
 
-//7. answer: 12 
+//7. answer: 12
 /*
     long long *p = (long long*)calloc(80, sizeof(long long));
 	printf("%d\n",(short int*)(p+4) - (short int*)(p+1));
@@ -1961,7 +1961,7 @@ Which of the following is the proper declaration of a pointer?
 
 */
 
-//9. answer: A 
+//9. answer: A
 /*
 Which of the following gives the value stored at the adress pointed to by pointer a?
     A.*a
@@ -1973,11 +1973,11 @@ Which of the following gives the value stored at the adress pointed to by pointe
 
 //10. answer: A
 /*
-What will be the output of the following C code? 
+What will be the output of the following C code?
    char s[]="hello";
 	char* p= s+3;
 	printf("%c %c\n", *(p+1), *(s+1));
-*/	
+*/
 /*
 	A.o e
 	B.e o
@@ -1989,11 +1989,11 @@ What will be the output of the following C code?
 
 
 //11. answer: A
-/* 
+/*
 Combine the following two statements into one:
     char* p;
     p=(char*)malloc(100);
-*/	
+*/
 /*
 	A.char *p= (char*)malloc(100);
 	B.char p = *malloc(100);
@@ -2050,7 +2050,7 @@ What is the size of a C sturcture?
 		int x,y,z;
 	}p[10];
 	printf("%d\n", (short int *)&p[4].y - (short int *)&p[2].z);
-*/	
+*/
 
 //17.answer: 32
 /*
@@ -2069,7 +2069,7 @@ What is the size of a C sturcture?
 		int x,y,z;
 	}p[10];
 	printf("%d\n", (char *)&p[5].x - (char *)&p[2].z);
-*/	
+*/
 
 #pragma endregion
 */
