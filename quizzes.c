@@ -4,7 +4,7 @@
 int main() {
 	//--------------------------Week-1_Simple-Quiz----------------------------------//
 
-	//1. answer: 6
+	//1. answer: 6 uaye
 	/*
 	printf("%d", printf(""1 2 3\n));
 	*/
