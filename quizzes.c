@@ -968,7 +968,7 @@ int main() {
 	//3. answer:8
 	/*
 	int a =1, b = 1, c = 1;
-	void f(int a, int &b, int &c){
+	void f(int a, int &b, int &c){  // a deyismir cunki locallasmir yani qlobali deyismir
 	a++; b+=2; c+=3;
 	}
 
@@ -996,8 +996,8 @@ int main() {
 	//5. answer:0
 	/*
 	int y;
-	void (int x, int y){
-	y = y * x;
+	void f(int x, int y){
+	y = y * x;  // if it was ::y = y * x the answer would be 20
 	}
 
 	int main (){
@@ -1034,7 +1034,7 @@ int main() {
 	/*
 	int x;
 	void f(int a, int b){
-	x = a+ b;
+	x = a + b;
 	}
 
 	int main (){
@@ -1102,7 +1102,7 @@ int main() {
 	/*
 	int f(int a,  int b){
 	if(a == 0) return 1;
-	return f(a - 2, b) * b;
+	return f(a - 2, b) * b;  /// burda meselen b nin quvetine qaldirirdiq bayaq dediyim seyde b^aldigimiz son cavab hansiki 5 b ^ 5 olacaq
 	}
 
 	int main (){
@@ -1127,9 +1127,9 @@ int main() {
 
 	//15. answer: 6
 	/*
-	int a=1, b=2, c=3;
+	int a=1, b=2, c=3;          // burda a ve c locallasib deye yeni & gore qiymet deyisir ama b qlobal b ise qiymet deyismir
 	void f(int &a, int b, int &c){
-	a = b; b = c; c = a;
+	a = b; b = c; c = a;  //a olur 2 c == a yazilib ele c de olur a yani 2
 	}
 
 	int main (){
@@ -1160,7 +1160,7 @@ int main() {
 	int main(){
 	int a = 2;
 	f(a);
-	printf("%d", a * ::a);
+	printf("%d", a * ::a);  // burda da localdaki int a ni edir 7 global deyismir o qalir 5 5 * 7 = 35
 
 	}
 	*/
@@ -1169,7 +1169,7 @@ int main() {
 	/*
 	int f(int a,  int b){
 	if(a == 0) return 1;
-	return f(a - 1, b) * b;
+	return f(a - 1, b) * b;  // izah elediyim qayda
 	}
 
 	int main (){
@@ -1182,7 +1182,7 @@ int main() {
 	/*
 	int f(int x){
 	if (x == 0) return 1;
-	return f(x-1) * x;
+	return f(x-1) * x;  // bu factoryaldi
 	}
 
 	int main (){
@@ -1194,7 +1194,7 @@ int main() {
 	/*
 	int x;
 	void f(int x, int y){
-	x = x+y;
+	x = x+y;  //eger globala access verseydi yani ::x yazsaydi cavab olacaqdi 7 ama yazmadigina gore 0 di
 	}
 
 	int main(){
@@ -1656,7 +1656,8 @@ for (int i = 35; i > 7; i--) {
 
 printf("%d\n", cnt); 26 */
 
-/*3. int cnt = 0;
+/*3.
+int cnt = 0;
 for (int i = 10; i > 0; i--) {
 	cnt++;
 	i -= 2;
@@ -1896,10 +1897,10 @@ printf("%.d\n", --x); 8 */
 
 //15. int main()
 //{
-//	char s[100] = "cat";
+//	char s[100] = "catcatcat";
 //	char t[100] = "student";
 //	strncat(s + 1, t + 3, 2);
-//	puts(s);
+//	puts(s); // strncat cat olan yerde ferq elemir hecne
 //} catde
 
 //16. int main()
@@ -2117,16 +2118,19 @@ printf("%.d\n", --x); 8 */
 #pragma region Midterm
 
 
-	/*1. char s[100] = "university";
+	/*1.
+    char s[100] = "university";
 	char t[100] = "school";
 	strncpy(s + 2, t + 1, 3);
 	puts(s); unchorsity */
 
-	/*2. char a[] = "crocodile";
+	/*2.
+	char a[] = "crocodile";   // burda  5 cinin yerine qoyanda onda sonrada bi dene /0 gelir deye null kimi oxuyur
 	a[5] = 0;
 	printf("%d\n", strlen(a + 2)); 3 */
 
-	/*3. char s[100] = "school";
+	/*3.
+	char s[100] = "school";
 	char t[100] = "chair";
 	strncpy(s + 1, t + 1, 2);
 	puts(s); shaool */
@@ -2135,7 +2139,8 @@ printf("%.d\n", --x); 8 */
 
 	// 5. printf("%d\n", strcmp("camp", "cam")); 1;
 
-	/*6. int a = 2, c = 3;
+	/*6.
+	int a = 2, c = 3;
 
 	int f(int a, int b) {
 		return a + b + c;
@@ -2145,7 +2150,9 @@ printf("%.d\n", --x); 8 */
 		printf("%d\n", f(1, 2));
 	} 6 */
 
-	/*7. int x = 2, y = 3;
+
+	/*7.
+	int x = 2, y = 3;
 
 	void f(void) {
 		x++; y++;
@@ -2156,7 +2163,9 @@ printf("%.d\n", --x); 8 */
 		printf("%d\n", x + y);
 	} 7 */
 
-	/*8. int x = 1, y = 1;
+
+	/*8.
+	int x = 1, y = 1;
 
 	void f(int x) {
 		x++; y++;
@@ -2168,7 +2177,8 @@ printf("%.d\n", --x); 8 */
 	} 3 */
 
 
-	/*9. int f(int n) {
+	/*9.
+        int f(int n) {
 		int cnt = 0;
 		while (n > 0) {
 			cnt += n % 10;
@@ -2181,7 +2191,8 @@ printf("%.d\n", --x); 8 */
 		printf("%d\n", f(1234));
 	} 10 */
 
-	/*10. int f(int a, int b) {
+	/*10.
+        int f(int a, int b) {
 		if (a == 0) return b;
 		return f(a - 1, b) * 2;
 	}
@@ -2190,45 +2201,53 @@ printf("%.d\n", --x); 8 */
 		printf("%d\n", f(3, 4));
 	} 32 */
 
-	/*11. float a[5];
+	/*11.
+         float a[5];
 	int res = sizeof(a) * sizeof(double);
 	printf("%d\n", res); 160 */
 
-	/*12. int a[6] = { 7,4,6,10,6,5 };
+	/*12.
+	int a[6] = { 7,4,6,10,6,5 };
 	int res = 0;
 	for (int i = 2; i < 6; i++)
 		if (a[i] > a[i - 1]) res += a[i - 1];
 
 	printf("%d\n", res); 10 */
 
-	/*13. int a[5] = { 1,2,3,4,5 };
-	int res = a[i] + a[3];
+	/*13.
+	int a[5] = { 1,2,3,4,5 };
+	int res = a[1] + a[3];
 	printf("%d\n", res); 6 */
 
-	/*14. int a[6] = { 7,9,6,3,5,8 };
+	/*14.
+	int a[6] = { 7,9,6,3,5,8 };
 	int res = 2;
 	for (int i = 1; i < 5; i++)
 		if (a[i - 1] > a[i + 1]) res += a[i];
 
 	printf("%d\n", res); 20 */
 
-	/*16. int a = 3, b = 8;
+	/*16.
+	int a = 3, b = 8;
 	int res = (a % 2) + (a % b) + (b % a);
 	printf("%d\n", res); 6 */
 
-	/*17. int i = 9, cnt = 0;
+	/*17.
+	int i = 9, cnt = 0;
 	while (i >= 4) {
 		i--;
 		cnt += 3;
 	}
 	printf("%d\n", cnt); 18 */
 
-	/*18. int cnt = 5;
+	/*18.
+	int cnt = 5;
 	for (int i = 3; i < 10; i += 2)
 		cnt += 3;
 	printf("%d\n", cnt); 17 */
 
-	/*19. int a = 5;
+	/*19.
+	int a = 5;
 	if (a++ > 5 && ++a >= 5 && a++ > 5)
 		printf("YES\n");
 	else
@@ -2236,7 +2255,8 @@ printf("%.d\n", --x); 8 */
 
 	printf("%d\n", a); 6 */
 
-	/*20. int a = 8;
+	/*20.
+	int a = 8;
 	if (a++ > 7 || ++a >= 5 || a++ > 2)
 		printf("YES\n");
 	else
