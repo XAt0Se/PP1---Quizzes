@@ -4,13 +4,22 @@
 int main() {
 	//--------------------------Week-1_Simple-Quiz----------------------------------//
 
-	//1. answer: 6 uaye
+	/* NOTE
+	x++   ==>   on next action x's value will increase
+	++x   ==>	increase its value immidately, yerindece artir
+	*/
+
+
+
+
+
+	//1. answer: 6
 	/*
 	printf("%d", printf(""1 2 3\n));
 	*/
 
 	//2. answer:1.254
-	/* nnnn
+	/*
 	double x = 1.2543;
 	printf("%.3lf", x);
 	*/
@@ -90,32 +99,32 @@ int main() {
 	printf("%d", res);
 	*/
 
-	//15. answer:
+	//15. answer: 12
 	/*
 	int a = 17, b = 6;
-	int res = a/b*b;
+	int res = a/b*b;  //soldan saga hesablanir
 	printf("%d", res);
 	*/
 
 	//16. answer: 9
 	/*
 	int a = 3, b = 3;
-	int res = a++ + --b;
-	printf("%d", a + res);
+	int res = a++ + --b; // a - on next action a's value will increase that is why it is 3 here and b - b decreasing it value here and became 2
+	printf("%d", a + res); // here a increase its value and become 4 and res's value is 5 therefore  output become 9
 	*/
 
 	//17. answer:3
 	/*
 	int a, b, c;
-	int i = scanf("%d %d %d", &a, &b, &c);
+	int i = scanf("%d %d %d", &a, &b, &c); // we scan 3 element here and i means how many element we scan -> output become 3
 	printf("%d", i);
 	*/
 
 	//18. answer: 21
 	/*
 	int a = 5, b = 8;
-	int res = ++a + b--;
-	printf("%d", b+ res);
+	int res = ++a + b--; // a incirease its value here and become 6 and b keep its value = 8 (on next b' operation its value dicrease)
+	printf("%d", b+ res); // here b decreade and become 7 and res = 14 -> output is 21
 	*/
 
 	//19. answer: 16
@@ -149,8 +158,8 @@ int main() {
 	//2. answer: 8
 	/*
 	int a = 7;
-	if(++a > 7 || ++a > 6 || a++ > 2)
-		printf("YES");
+	if(++a > 7 || ++a > 6 || a++ > 2) // there is or condition and it means if one of this condition is true then cantinue to do next action
+		printf("YES");	// as we see it is ++a and it increase immidately calue and become 8 and 8 > 7 is ture there fore we stop checking other conditions
 	else
 	printf("NO");
 	printf("%d", a);
@@ -358,25 +367,25 @@ int main() {
 	//1. answer: 4
 	/*
 	int i  = 2, j = 10, cnt = 0;
-	while(i++ < j--) cnt++;
+	while(i++ < j--) cnt++; // 10 - 2 / 2
 	printf("%d", cnt);
 	*/
 
 	//2. answer: 6
-	/*
+    /*
 	int cnt = 1;
 	for(int i = 2; i< 8; i++){
-	if(i>6) continue;
+	if(i>6) continue;  // If 'i' is greater than 6, skip the rest of the loop and go to the next iteration.
 	cnt++;
 	}
 	printf("%d", cnt);
-	*/
+
 
 	//3. answer: 7
 	/*
 	 int cnt = 3;
 	 for(int i = 9; i > 3; i--){
-	 if(i % 3) cnt++;
+	 if(i % 3) cnt++;  // should be diffirent from 0 cuz 0 mean false we need true
 	 printf("%d", cnt);
 	 }
 	*/
@@ -392,7 +401,7 @@ int main() {
 	/*
 	int cnt = 1;
 	for(int i =10; i > 2; i--){
-	if(i<5) continue;
+	if(i<5) continue;   // If 'i' is less than 5, skip the rest of the loop and go to the next iteration.
 	cnt++;
 	}
 	printf("%d", cnt);
@@ -402,7 +411,7 @@ int main() {
 	/*
 	int cnt = 2;
 	for(int i = 10; i >0; i--){
-	if(--i <  5)break;
+	if(--i <  5)break;  // here i dicrease 2 times like 10 8 6 and more and if less than 5 stop
 	cnt++;
 	}
 	printf("%d", cnt);
@@ -410,9 +419,9 @@ int main() {
 
 	//7. asnwer:6
 	/*
-	int cn t= 2;
+	int cnt= 2;
 	for(int i = 6; i < 13; i++)
-	   if(i %4>1) cnt++
+	   if(i % 4>1) cnt++;  //6 7 10 11
 	   printf("%d", cnt);
 	*/
 
@@ -420,8 +429,8 @@ int main() {
 	/*
 	int cnt = 0;
 	for(int i =8; i>0; i--){
-	if(i--<4) break;
-	cnt++;
+	if(i--<4) break;  // 2 times decreasing 8 6 4 2 and if less than 4 stop
+	cnt++;  //become 3
 	}
 	printf("%d", cnt);
 	*/
@@ -436,7 +445,7 @@ int main() {
 	printf("%d", cnt);
 	*/
 
-	//10. anwer: 6 defe hello
+	//10. anwer: 6 times hello
 	/*
 	int i = 12;
 	for(;i;i-= 2)
@@ -446,14 +455,14 @@ int main() {
 	//11. answer:6
 	/*
 	int i = 6, cnt = 0;
-	while(i - cnt) cnt++;
+	while(i - cnt) cnt++; // 6-0|6-1|6-2|6-3|6-4|6-5|
 	printf("%d", cnt);
 	*/
 
 	//12. answer: 3
 	/*
 	int i  = 1, j = 7, cnt = 0;
-	while(i < j ){
+	while(i < j ){ // 1<7|2<6|3<5|
 	i++; j--;
 	cnt++;
 	}
@@ -484,12 +493,13 @@ int main() {
 	/*
 	int cnt = 6;
 	for(int i = 7; i <=15; i++)
-		if(i%4>1) cnt++;
+		if(i%4>1) cnt++; // 7 10 11 14 15
 	printf("%d", cnt);
 	*/
 
 	//16. answer: 25
 	/*
+	//THAT IS MATRIX
 	int cnt = 0;
 	for(int i = 0; i < 5; i++)
 	for(int j = 0; j < 5; j++)
@@ -497,7 +507,7 @@ int main() {
 	printf("%d", cnt);
 	*/
 
-	//17. answer: 10
+	//17. answer: 10 x Hello
 	/*
 	int i = 10;
 	for(;i;i--)
@@ -603,7 +613,7 @@ int main() {
 	/*
 	short int a[16];
 
-	res = sizeof(a) / sizeof(long long);
+	res = sizeof(a) / sizeof(long long);  // 2*16 / 8
 
 	printf("%d\n", res);
 	*/
@@ -769,7 +779,7 @@ int main() {
 	//2. asnwer: 6
 	/*
 	char a[100];
-	scanf("%s", a); //crocodile
+	scanf("%s", a); //crocodile     // what happen -> cat/0odile/0
 	scanf("%s", a); // cat
 	printf("%d", strlen(a+1) + strlen(a+5));
 	*/
@@ -783,7 +793,7 @@ int main() {
 	//4. asnwer: 5
 	/*
 	char a[100];
-	scanf("%s", a); //amazonka
+	scanf("%s", a); //amazonka   // what happen -> dog/0onka/0
 	scanf("%s", a); // dog
 	printf("%d", strlen(a+1) + strlen(a+5));
 	*/
@@ -868,12 +878,12 @@ int main() {
 	/*
 	char a[] = "Hello";
 	printf("%d", strlen(a+2));
- 	*/
+	*/
 
 	//17. answer:og
 	/*
 	char a[100];
-	scanf("%s", a); //amazonka
+	scanf("%s", a); //amazonka  // what happen -> dog/0onka/0 when you puts it it start to read one by one till it sees "/0"- NULL and stop when see
 	scanf("%s", a); //dog
 	puts(a+1);
 	*/
@@ -898,6 +908,36 @@ int main() {
 
 	//--------------------------Week-7_Simple-Quiz----------------------------------//
 
+
+	/*
+	THIS IS MY SECRET RULE TO DO THIS EASILY
+	FOR EXAMPLE LOOK FIRST QUESTION
+
+    as we see here the return is - return f(a - 2, b - 1) + 1; when the return wants us to add THIS PART " + "
+    we just need to know one rule-(i made it)
+    1. find which intiger given in if - like if(b == 0) return 0;
+    2.how much its given value
+    3.if you know them then follow this rule
+    3,1 - 3,3. burda meselen b if de verilib ne edirik birinci (b = 22 bunu bilirik) b den if in icinde verilen beraberliyi cixiriq
+         yani 22 - 0 = 22 sonra bu b ni boluruk funcitondaki reqeme - meselen burda return f(a - 2, b - 1) + 1; b den 1 cixirlar
+         yani biz tapdigimiz 22 ni boluruk 1 e 22/1=22 sonrada hemin 22 ni vururuq  + 1;(f(a - 2, b - 1) + 1;  burda verilib bu)
+         o da olur 22 cavabimiz 22 dir fso
+
+
+
+    4. indi meselen hemise bele vermez bu seferde burda bele verer
+       if(x == 0) return 1;
+        return f(x-1) * 2;
+
+    4,1. burda gorduyumuz kimi toplama deyil orda ne edecik
+         meselen x in 5 olaraq goturek (f(5))  hemiseki qayda 5 - if in icindeki reqem o da 0 di  yani 5 - 0= 5
+         sonra tapdigimiz reqemi yani 5 i boluruk f(x-1) bunu icindeki reeqeme olur 5/1=5
+         burda artiq vurma oldugu ucun tapdigimiz son netice olan 5 i qaldiriq 2 nin quvvetine our 2 usdu 5 2^5 buda = 32 cavab 32 di
+
+         BURDA BIR QAYDADA VAR RETURN QAYDASI IF IN SONUNDAKI BUNLARIN EKSERYETINDE 0 DI DEYE BAXILMIR AMA 0 DAN FERQLI BIR SEY OLSA EN SON
+         TAPDIGINIZ CAVABIN UZERINE GELIRSIZ EGER TOPLAMADISA  YOXXX EGER VURMADIRSA RETURN CAVABINI VURURSUN EN SON ALDIGINZI CAVABA
+         if(b == 0) return 0;   BU RETURN DEN SOHBET GEDIR
+	*/
 
 	//1. answer: 22
 	/*
@@ -1576,7 +1616,7 @@ int main() {
 	*/
 
 
-	}
+}
 
 
 
@@ -1588,314 +1628,314 @@ int main() {
 
 
 
-	#pragma region Graded Quiz 1
+#pragma region Graded Quiz 1
 
-	/*1. int cnt = 2;
-	for (int i = 2; i < 10; i++) {
-		cnt++;
-		if (i > 7) break;
+/*1. int cnt = 2;
+for (int i = 2; i < 10; i++) {
+	cnt++;
+	if (i > 7) break;
+}
+printf("%d\n", cnt); 9 */
+
+/*2. int cnt = 1;
+for (int i = 35; i > 7; i--) {
+	switch (i)
+	{
+	case 15:
+		cnt += 15;
+		break;
+
+	case 10:
+		cnt += 10;
+		break;
+
+	case 7:
+		cnt += 7;
 	}
-	printf("%d\n", cnt); 9 */
+}
 
-	/*2. int cnt = 1;
-	for (int i = 35; i > 7; i--) {
-		switch (i)
-		{
-		case 15:
-			cnt += 15;
-			break;
+printf("%d\n", cnt); 26 */
 
-		case 10:
-			cnt += 10;
-			break;
+/*3. int cnt = 0;
+for (int i = 10; i > 0; i--) {
+	cnt++;
+	i -= 2;
+}
+printf("%d\n", cnt); 4 */
 
-		case 7:
-			cnt += 7;
-		}
-	}
+/*4. int cnt = 4;
+for (int i = 10; i >= 2; i--) {
+	if (i % 3 > 1) cnt++;
+}
+printf("%d\n", cnt); 7 */
 
-	printf("%d\n", cnt); 26 */
+/*5. int i = 17;
+for (; i; i--) {
+printf("Hello\n"); 17
+} */
 
-	/*3. int cnt = 0;
-	for (int i = 10; i > 0; i--) {
-		cnt++;
-		i -= 2;
-	}
-	printf("%d\n", cnt); 4 */
+/*6. int a = 7, b = 2;
+int res = ++a + ++b;
+printf("%d\n", res + a); 19 */
 
-	/*4. int cnt = 4;
-	for (int i = 10; i >= 2; i--) {
-		if (i % 3 > 1) cnt++;
-	}
-	printf("%d\n", cnt); 7 */
+/*7. int a = 3, b = 8;
+int res = (a % 2) + (a % b) + (b % a);
+printf("%d\n", res); 6 */
 
-	/*5. int i = 17;
-	for (; i; i--) {
-	printf("Hello\n"); 17
-	} */
+/*8. int a = 6, b = 13;
+int res = b / a + b % a + (a < b) + (a > b);
+printf("%d\n", res); 4 */
 
-	/*6. int a = 7, b = 2;
-	int res = ++a + ++b;
-	printf("%d\n", res + a); 19 */
+/*9. double x = 4.3757;
+printf("%.3lf\n", x); 4.376*/
 
-	/*7. int a = 3, b = 8;
-	int res = (a % 2) + (a % b) + (b % a);
-	printf("%d\n", res); 6 */
+/*10. printf("%.d\n", printf("ADA University\n")); 15 */
 
-	/*8. int a = 6, b = 13;
-	int res = b / a + b % a + (a < b) + (a > b);
-	printf("%d\n", res); 4 */
+/*12. float a[10];
+int res = sizeof(a) / sizeof(long long);
+printf("%.d\n", res); 5 */
 
-	/*9. double x = 4.3757;
-	printf("%.3lf\n", x); 4.376*/
+/*13. int a[6] = { 5,2,7,1,6,2 };
+int res = 0;
+for (int i = 1; i < 5; i++) {
+	if (a[i] > a[i - 1]) res += a[i];
+}
+printf("%.d\n", res); 13 */
 
-	/*10. printf("%.d\n", printf("ADA University\n")); 15 */
+/*15. double a[10];
+int res = sizeof(a) / sizeof(int);
+printf("%.d\n", res);
+return 0; 20 */
 
-	/*12. float a[10];
-	int res = sizeof(a) / sizeof(long long);
-	printf("%.d\n", res); 5 */
+/*16. int a = 4, b = 9, res;
+res = (++a > --b - 4) ? a++ : --b;
+printf("%.d\n", res - a); - 1 */
 
-	/*13. int a[6] = { 5,2,7,1,6,2 };
-	int res = 0;
-	for (int i = 1; i < 5; i++) {
-		if (a[i] > a[i - 1]) res += a[i];
-	}
-	printf("%.d\n", res); 13 */
+/*17. int a = 8;
+if (a++ > 7 || ++a >= 5 || a++ > 2) {
+	printf("YES\n");
+}
+else {
+	printf("NO\n");
+}
+printf("%.d\n", a); YES and 9 */
 
-	/*15. double a[10];
-	int res = sizeof(a) / sizeof(int);
-	printf("%.d\n", res);
-	return 0; 20 */
+/*18. int a = 11, b = 7, res;
+if (a % 3 > b % 3) {
+	res = ++a * --b;
+}
+else {
+	res = --a / ++b;
+}
+printf("%.d\n", res); 72 */
 
-	/*16. int a = 4, b = 9, res;
-	res = (++a > --b - 4) ? a++ : --b;
-	printf("%.d\n", res - a); - 1 */
+/*19. int x = 7;
+switch (x) {
+case 7: x--;
+case 4: x--;
+default: x--;
+}
 
-	/*17. int a = 8;
-	if (a++ > 7 || ++a >= 5 || a++ > 2) {
-		printf("YES\n");
-	}
-	else {
-		printf("NO\n");
-	}
-	printf("%.d\n", a); YES and 9 */
+printf("%.d\n", --x); 3 */
 
-	/*18. int a = 11, b = 7, res;
-	if (a % 3 > b % 3) {
-		res = ++a * --b;
-	}
-	else {
-		res = --a / ++b;
-	}
-	printf("%.d\n", res); 72 */
+/*20. int x = 10;
+switch (x) {
+case 7: x--;
+case 4: x--;
+default: x--;
+}
 
-	/*19. int x = 7;
-	switch (x) {
-	case 7: x--;
-	case 4: x--;
-	default: x--;
-	}
+printf("%.d\n", --x); 8 */
 
-	printf("%.d\n", --x); 3 */
+#pragma endregion
+//}
 
-	/*20. int x = 10;
-	switch (x) {
-	case 7: x--;
-	case 4: x--;
-	default: x--;
-	}
+#pragma region Graded Quiz 2
 
-	printf("%.d\n", --x); 8 */
-
-	#pragma endregion
-	//}
-
-	#pragma region Graded Quiz 2
-
-	//1. int a = 2, c = 3;
-	//
-	//int f(int a, int b) {
-	//	return a + b + c;
-	//}
-	//
-	//int main()
-	//{
-	//	printf("%d\n", f(1, 2));
-	//} 6
+//1. int a = 2, c = 3;
+//
+//int f(int a, int b) {
+//	return a + b + c;
+//}
+//
+//int main()
+//{
+//	printf("%d\n", f(1, 2));
+//} 6
 
 
-	//2. int f(int x) {
-	//	if (x == 1) return x + 1;
-	//	return f(x - 1) * 3;
-	//}
-	//
-	//int main()
-	//{
-	//	printf("%d\n", f(3));
-	//} 18
+//2. int f(int x) {
+//	if (x == 1) return x + 1;
+//	return f(x - 1) * 3;
+//}
+//
+//int main()
+//{
+//	printf("%d\n", f(3));
+//} 18
 
 
-	//3. int f(int n) {
-	//	while (n > 99) n /= 10;
-	//	return n;
-	//}
-	//
-	//int main()
-	//{
-	//	printf("%d\n", f(1234));
-	//} 12
+//3. int f(int n) {
+//	while (n > 99) n /= 10;
+//	return n;
+//}
+//
+//int main()
+//{
+//	printf("%d\n", f(1234));
+//} 12
 
-	//4. int x = 1, y = 1;
-	//
-	//void f(int x) {
-	//	x++; y++;
-	//}
-	//
-	//int main() {
-	//	f(5);
-	//	printf("%d\n", x + y);
-	//} 3
+//4. int x = 1, y = 1;
+//
+//void f(int x) {
+//	x++; y++;
+//}
+//
+//int main() {
+//	f(5);
+//	printf("%d\n", x + y);
+//} 3
 
-	//5. int f(int a, int b) {
-	//	if (a == 2) return b++;
-	//	return f(a - 1, b) + 3;
-	//}
-	//
-	//int main()
-	//{
-	//	printf("%d\n", f(4, 10));
-	//} 16
+//5. int f(int a, int b) {
+//	if (a == 2) return b++;
+//	return f(a - 1, b) + 3;
+//}
+//
+//int main()
+//{
+//	printf("%d\n", f(4, 10));
+//} 16
 
-	//6.int f(int x) {
-	//
-	//	if (x == 0) return 0;
-	//	return f(x - 1) * 532;
-	//}
-	//int main() {
-	//	int x = 123456;
-	//	f(x);
-	//	printf("%d\n", f(x));
-	//} // 0
+//6.int f(int x) {
+//
+//	if (x == 0) return 0;
+//	return f(x - 1) * 532;
+//}
+//int main() {
+//	int x = 123456;
+//	f(x);
+//	printf("%d\n", f(x));
+//} // 0
 
-	//7. int f(int x) {
-	//	if (x == 1) return x + 1;
-	//	return f(x - 2) + 5;
-	//}
-	//
-	//int main()
-	//{
-	//	printf("%d\n", f(9));
-	//} 22
+//7. int f(int x) {
+//	if (x == 1) return x + 1;
+//	return f(x - 2) + 5;
+//}
+//
+//int main()
+//{
+//	printf("%d\n", f(9));
+//} 22
 
-	//8. int f(int a, int b) {
-	//	if (a == 0) return 1;
-	//	return f(a - 1, b) * 3;
-	//}
-	//
-	//int main()
-	//{
-	//	printf("%d\n", f(2, 3));
-	//} 9
+//8. int f(int a, int b) {
+//	if (a == 0) return 1;
+//	return f(a - 1, b) * 3;
+//}
+//
+//int main()
+//{
+//	printf("%d\n", f(2, 3));
+//} 9
 
-	//9. int f(int a, int b) {
-	//	if (a == 0) return b;
-	//	if (b == 0) return a;
-	//	return f(a - 1, b - 2);
-	//}
-	//
-	//int main()
-	//{
-	//	printf("%d\n", f(10, 10));
-	//} 5
+//9. int f(int a, int b) {
+//	if (a == 0) return b;
+//	if (b == 0) return a;
+//	return f(a - 1, b - 2);
+//}
+//
+//int main()
+//{
+//	printf("%d\n", f(10, 10));
+//} 5
 
-	//10. int f(int n) {
-	//	int cnt = 0;
-	//	while (n > 0) {
-	//		cnt++;
-	//		n /= 10;
-	//	}
-	//	return cnt;
-	//}
-	//
-	//int main()
-	//{
-	//	printf("%d\n", f(1234));
-	//} 4
-
-
-	//11. int main()
-	//{
-	//	char a[] = "Crocodile";
-	//	a[5] = '0';
-	//	printf("%d\n", strlen(a + 2));
-	//} 7
+//10. int f(int n) {
+//	int cnt = 0;
+//	while (n > 0) {
+//		cnt++;
+//		n /= 10;
+//	}
+//	return cnt;
+//}
+//
+//int main()
+//{
+//	printf("%d\n", f(1234));
+//} 4
 
 
-	//12. int main()
-	//{
-	//	char a[] = "ADA Uni";
-	//	printf("%d\n", strlen(a + 3));
-	//} 4
-
-	//13. int main()
-	//{
-	//	char s[100] = "home";
-	//	char t[100] = "student";
-	//	strcat(s + 2, t + 4);
-	//	puts(s);
-	//} homeent
-
-	//14. int main()
-	//{
-	//	char s[100] = "table";
-	//	char t[100] = "chair";
-	//	strncat(s + 2, t + 3, 2);
-	//	puts(s);
-	//} tableir
+//11. int main()
+//{
+//	char a[] = "Crocodile";
+//	a[5] = '0';
+//	printf("%d\n", strlen(a + 2));
+//} 7
 
 
-	//15. int main()
-	//{
-	//	char s[100] = "cat";
-	//	char t[100] = "student";
-	//	strncat(s + 1, t + 3, 2);
-	//	puts(s);
-	//} catde
+//12. int main()
+//{
+//	char a[] = "ADA Uni";
+//	printf("%d\n", strlen(a + 3));
+//} 4
 
-	//16. int main()
-	//{
-	//	printf("%d\n", strncmp("camp", "can", 3));
-	//} -1
+//13. int main()
+//{
+//	char s[100] = "home";
+//	char t[100] = "student";
+//	strcat(s + 2, t + 4);
+//	puts(s);
+//} homeent
 
-	//17. int main()
-	//{
-	//	char a[50];
-	//	int res = sizeof(a) * sizeof(int);
-	//	printf("%d\n", res);
-	//} 200
+//14. int main()
+//{
+//	char s[100] = "table";
+//	char t[100] = "chair";
+//	strncat(s + 2, t + 3, 2);
+//	puts(s);
+//} tableir
 
-	//18. int main()
-	//{
-	//	char s[100] = "cool";
-	//	char t[100] = "weather";
-	//	strcat(s + 1, t + 4);
-	//	puts(s);
-	//} coolher
 
-	//19. int main()
-	//{
-	//	char a[100];
-	//	scanf("%s", a); // amazonka;
-	//	scanf("%s", a); // site;
-	//	printf("%d\n", strlen(a + 2) * strlen(a + 5));
-	//} 6
+//15. int main()
+//{
+//	char s[100] = "cat";
+//	char t[100] = "student";
+//	strncat(s + 1, t + 3, 2);
+//	puts(s);
+//} catde
 
-	//20. int main()
-	//{
-	//	printf("%d\n", strcmp("camp", "cam"));
-	//} 1
+//16. int main()
+//{
+//	printf("%d\n", strncmp("camp", "can", 3));
+//} -1
 
-	#pragma endregion
+//17. int main()
+//{
+//	char a[50];
+//	int res = sizeof(a) * sizeof(int);
+//	printf("%d\n", res);
+//} 200
+
+//18. int main()
+//{
+//	char s[100] = "cool";
+//	char t[100] = "weather";
+//	strcat(s + 1, t + 4);
+//	puts(s);
+//} coolher
+
+//19. int main()
+//{
+//	char a[100];
+//	scanf("%s", a); // amazonka;
+//	scanf("%s", a); // site;
+//	printf("%d\n", strlen(a + 2) * strlen(a + 5));
+//} 6
+
+//20. int main()
+//{
+//	printf("%d\n", strcmp("camp", "cam"));
+//} 1
+
+#pragma endregion
 #pragma region Graded Quiz 4
 	/*
 //1.answer: 9
@@ -1905,177 +1945,177 @@ int main() {
 	printf("%d\n", *(ptr+2));
 	*/
 
-//2. answer: -16
-/*
-    double* p = (double*)calloc(100,sizeof(long long));
-    printf("%d\n", (char*)(p+1) - (char*)(p+3));
-*/
+	//2. answer: -16
+	/*
+		double* p = (double*)calloc(100,sizeof(long long));
+		printf("%d\n", (char*)(p+1) - (char*)(p+3));
+	*/
 
 
-//3. answer: 12
-/*
-    long long *p= (long long*)calloc(80, sizeof(long long));
-	for(long long i=0; i<10; i++) p[i]=i+1;
-	long long *q= p+5;
-	printf("%d\n", *(q-1) + *(q+1));
-*/
+	//3. answer: 12
+	/*
+		long long *p= (long long*)calloc(80, sizeof(long long));
+		for(long long i=0; i<10; i++) p[i]=i+1;
+		long long *q= p+5;
+		printf("%d\n", *(q-1) + *(q+1));
+	*/
 
-//4. answer: A
-/*
-Which of the following is the proper declaration of a pointer?
-    A.int *x;
-	B.int x;
-	C.int &x;
-	D.ptr *x;
-	E.ptr x;
-*/
+	//4. answer: A
+	/*
+	Which of the following is the proper declaration of a pointer?
+		A.int *x;
+		B.int x;
+		C.int &x;
+		D.ptr *x;
+		E.ptr x;
+	*/
 
-//5. answer: 12
-/*
-    long long *p = (long long*)calloc(80, sizeof(long long));
-	for(long long i=0; i<10; i++) p[i]=i+1;
-	long long *q= p+5;
-	printf("%d\n", *(q-1) + *(q+1));
+	//5. answer: 12
+	/*
+		long long *p = (long long*)calloc(80, sizeof(long long));
+		for(long long i=0; i<10; i++) p[i]=i+1;
+		long long *q= p+5;
+		printf("%d\n", *(q-1) + *(q+1));
 
-*/
+	*/
 
-//6. answer: -8
-/*
-    double* p=(double*)calloc(100, sizeof(long long));
-	printf("%d\n", (int*)(p+2) - (int*)(p+6));
+	//6. answer: -8
+	/*
+		double* p=(double*)calloc(100, sizeof(long long));
+		printf("%d\n", (int*)(p+2) - (int*)(p+6));
 
-*/
+	*/
 
-//7. answer: 12
-/*
-    long long *p = (long long*)calloc(80, sizeof(long long));
-	printf("%d\n",(short int*)(p+4) - (short int*)(p+1));
+	//7. answer: 12
+	/*
+		long long *p = (long long*)calloc(80, sizeof(long long));
+		printf("%d\n",(short int*)(p+4) - (short int*)(p+1));
 
-*/
+	*/
 
-//8. answer: 8
-//What is the output for the next code(for 64-bit architecture)
-/*
-    int* p= (int*)malloc(100);
-	printf("%d\n", sizeof(p));
+	//8. answer: 8
+	//What is the output for the next code(for 64-bit architecture)
+	/*
+		int* p= (int*)malloc(100);
+		printf("%d\n", sizeof(p));
 
-*/
+	*/
 
-//9. answer: A
-/*
-Which of the following gives the value stored at the adress pointed to by pointer a?
-    A.*a
-	B.&a
-	C.a
-	D.address(a)
-	E.->a
-*/
+	//9. answer: A
+	/*
+	Which of the following gives the value stored at the adress pointed to by pointer a?
+		A.*a
+		B.&a
+		C.a
+		D.address(a)
+		E.->a
+	*/
 
-//10. answer: A
-/*
-What will be the output of the following C code?
-   char s[]="hello";
-	char* p= s+3;
-	printf("%c %c\n", *(p+1), *(s+1));
-*/
-/*
-	A.o e
-	B.e o
-	C.l h
-	D.o l
-	E.l o
+	//10. answer: A
+	/*
+	What will be the output of the following C code?
+	   char s[]="hello";
+		char* p= s+3;
+		printf("%c %c\n", *(p+1), *(s+1));
+	*/
+	/*
+		A.o e
+		B.e o
+		C.l h
+		D.o l
+		E.l o
 
-*/
-
-
-//11. answer: A
-/*
-Combine the following two statements into one:
-    char* p;
-    p=(char*)malloc(100);
-*/
-/*
-	A.char *p= (char*)malloc(100);
-	B.char p = *malloc(100);
-	C.char *p=(char) malloc(100);
-	D.char *p= (char *)(malloc *)(100);
-
-*/
-
-//12. answer: -36
-/*
-    struct Point
-	{
-		int x,y,z;
-	};
-	struct Point* p=(struct Point*)calloc(10, sizeof(Point));
-	printf("%d", (char*)&p[2] - (char*)&p[5]);
-*/
-
-//13. answer: A
-/*
-What is the size of a C sturcture?
-    A.Size of C structure is the total bytes of all elements of structure.
-	B.C structure is always 128 bytes.
-	C.Size of C structure is the size of largest element.
-	D.Size of C structure is the size of smallest element.
-	E.C structure is always 64 bytes.
-*/
+	*/
 
 
-//14. answer: 80
-/*
-    union Person{
-		char name[80];
-		int x,y,z;
-		long long u;
-	}p;
-	printf("%d\n", sizeof(p));
-*/
+	//11. answer: A
+	/*
+	Combine the following two statements into one:
+		char* p;
+		p=(char*)malloc(100);
+	*/
+	/*
+		A.char *p= (char*)malloc(100);
+		B.char p = *malloc(100);
+		C.char *p=(char) malloc(100);
+		D.char *p= (char *)(malloc *)(100);
+
+	*/
+
+	//12. answer: -36
+	/*
+		struct Point
+		{
+			int x,y,z;
+		};
+		struct Point* p=(struct Point*)calloc(10, sizeof(Point));
+		printf("%d", (char*)&p[2] - (char*)&p[5]);
+	*/
+
+	//13. answer: A
+	/*
+	What is the size of a C sturcture?
+		A.Size of C structure is the total bytes of all elements of structure.
+		B.C structure is always 128 bytes.
+		C.Size of C structure is the size of largest element.
+		D.Size of C structure is the size of smallest element.
+		E.C structure is always 64 bytes.
+	*/
 
 
-//15. answer: 96
-/*
-    struct Person{
-		char name[80];
-		int x,y;
-		double z;
-	};
-	printf("%d\n", sizeof(Person));
-*/
+	//14. answer: 80
+	/*
+		union Person{
+			char name[80];
+			int x,y,z;
+			long long u;
+		}p;
+		printf("%d\n", sizeof(p));
+	*/
 
-//16. answer: 10
-/*
-    struct Point{
-		int x,y,z;
-	}p[10];
-	printf("%d\n", (short int *)&p[4].y - (short int *)&p[2].z);
-*/
 
-//17.answer: 32
-/*
-    struct Point
-	{
-      int x,y;
-	};
-    struct Point* p = (struct Point*)calloc(20, sizeof(Point));
-	printf("%d\n", (char*)&p[7] - (char*)&p[3]);
+	//15. answer: 96
+	/*
+		struct Person{
+			char name[80];
+			int x,y;
+			double z;
+		};
+		printf("%d\n", sizeof(Person));
+	*/
 
-*/
+	//16. answer: 10
+	/*
+		struct Point{
+			int x,y,z;
+		}p[10];
+		printf("%d\n", (short int *)&p[4].y - (short int *)&p[2].z);
+	*/
 
-//18. answer: 28
-/*
-    struct Point{
-		int x,y,z;
-	}p[10];
-	printf("%d\n", (char *)&p[5].x - (char *)&p[2].z);
-*/
+	//17.answer: 32
+	/*
+		struct Point
+		{
+		  int x,y;
+		};
+		struct Point* p = (struct Point*)calloc(20, sizeof(Point));
+		printf("%d\n", (char*)&p[7] - (char*)&p[3]);
+
+	*/
+
+	//18. answer: 28
+	/*
+		struct Point{
+			int x,y,z;
+		}p[10];
+		printf("%d\n", (char *)&p[5].x - (char *)&p[2].z);
+	*/
 
 #pragma endregion
-*/
+
 
 #pragma region Midterm
-int main() {
+
 
 	/*1. char s[100] = "university";
 	char t[100] = "school";
@@ -2203,5 +2243,4 @@ int main() {
 		printf("NO\n");
 
 	printf("%d\n", a); 9 */
-}
 #pragma endregion
