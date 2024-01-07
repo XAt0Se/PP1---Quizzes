@@ -1212,6 +1212,15 @@ int main() {
 	// ptr++  => pass to the next variable
 	//(*ptr)++  => increase value
 	//*ptr-=2   => decrease value
+	/*
+            ptr-- shifts
+        ptr -= shifts
+        *ptr-- shifts
+        *ptr -= decreases
+        (*ptr) -- decreases
+        (*ptr) -= decreases
+	*/
+
 
 	//-------------------------------//
 
@@ -1234,8 +1243,8 @@ int main() {
 	*/
 
 	//3. answer: 8
-	//  verilen size da olan seyin icine ne qeder verilmis size li variable yerlesdirmek olar onu tapiriq
-	//birinci biz d ve b ni p1 p2 ye veririk, sonra bir birinden cixilir b ve d int olduguna gore 4 e vurulur printf de char olduugna gore de 1 e bolunur
+	//  burada valuelere baxilmir sadece memory adresine baxirsan d - b de burdaki memeoy adreslerinin ciximidi
+	//  bele olanda 2 olur bu ikisinin memory adresinin ciximi onda da 2 * 4/1 =8
 	/*
 	int a = 2, b = 3, c = 4, d = 5;
 	int* p1, *p2;
@@ -1245,7 +1254,7 @@ int main() {
 	*/
 
 	//4. answer: 1
-	// burda ilk ptr inde x 2 vahid azaldir, menasi ptr=ptr-2 ama sonraki ise hemin memory adresindeki vaueni 2 vahid azaldir
+	// burda ilk ptr inde x 2 vahid geriye gedir yani d den b ye, menasi ptr=ptr-2 ama sonraki ise hemin memory adresindeki vaueni 2 vahid azaldir
 	/*
 	int a = 2, b = 3, c = 4, d = 5;
 	int* ptr;
@@ -1256,7 +1265,7 @@ int main() {
 	*/
 
 	// 5. answer: 4
-	// ilk once indexi mertebeni 1 vahid qaldirdiq(PASS THE NEXT VALUE) b den geldi c ye, IKINCI PTR DA da c nin qiymetini 1 vahid qaldirdiq
+	// ilk once indexi mertebeni 1 vahid qaldirdiq(PASS THE  NEXT VALUE) b den geldi c ye, IKINCI PTR DA da c nin qiymetini 1 vahid qaldirdiq
 	/*
 	int a,b = 1, c = 2, d;
 	int* ptr;
@@ -1285,7 +1294,7 @@ int main() {
 	*/
 
 	//8. answer: 2
-	// p1- p2=> &d - &b => 5-3
+	// p1- p2=> &d - &b => memory adreslerinin ferqi o da nece bilersen yerlesdiyi siraya baxaraq b den d ye 2 addim var
 	/*
 	int a = 2, b = 3, c = 4, d = 5;
 	int* p1, *p2;
@@ -1296,7 +1305,7 @@ int main() {
 	*/
 
 	//9. answer:3
-	// &d - &a => 5 - 2 = 3
+	// &d - &a => memory adress ferqi
 	/*
 	double a = 2, b = 3, c = 4, d = 5;
 	printf("%d", &d - &a);
@@ -1314,7 +1323,7 @@ int main() {
 	*/
 
 	//11. answer: -3
-	// bu ele &a - &d di hansiki sadece valueleri cixiriq yeni  2 - 5 = -3
+	// bu ele &a - &d di hansiki memory adress ferqi a nin sirasindan d nin sirasini cix
 	/*
 	double a = 2, b = 3, c = 4, d = 5;
 	double* p;
@@ -1330,9 +1339,9 @@ int main() {
 	/*
 	int a = 2, b = 3, c = 4, d = 5;
 	int* ptr;
-	ptr = &d;
+	ptr = &d; // decresing value
 	*ptr -= 2;
-	(*ptr) -= 2;
+	(*ptr) -= 2; // decresing value
 	printf("%d", b + c);
 	*/
 
@@ -1347,8 +1356,7 @@ int main() {
 	*/
 
 	//14. answer: -4
-	// double di size i da 8 oldugundan cixib 8 e vururuq ve hemiseki kimi de int* verib oun size na bolluk
-	// 2 - 4 = -2 , -2*8/4 = -4
+	// memory adress ferqi, yerine baxiriq a dan c ye 2 addim var sonrada 2 * 8 / 4 edir cavab -4
 	/*
 	double a = 2, b = 3, c = 4, d = 5;
 	int* p1, *p2;
