@@ -1952,13 +1952,13 @@ printf("%.d\n", --x); 8 */
 	/*
 	int* ptr =(int*)malloc(20);
 	for(int i=0; i<5; i++) ptr[i]=i+7;
-	printf("%d\n", *(ptr+2));
+	printf("%d\n", *(ptr+2));   // p[2] means
 	*/
 
 	//2. answer: -16
 	/*
 		double* p = (double*)calloc(100,sizeof(long long));
-		printf("%d\n", (char*)(p+1) - (char*)(p+3));
+		printf("%d\n", (char*)(p+1) - (char*)(p+3)); // iki pointer arasindaki size yani 1-3 * 8 / 1
 	*/
 
 
@@ -1967,7 +1967,7 @@ printf("%.d\n", --x); 8 */
 		long long *p= (long long*)calloc(80, sizeof(long long));
 		for(long long i=0; i<10; i++) p[i]=i+1;
 		long long *q= p+5;
-		printf("%d\n", *(q-1) + *(q+1));
+		printf("%d\n", *(q-1) + *(q+1)); // 4 6  p[4] and p[6]
 	*/
 
 	//4. answer: A
@@ -1985,25 +1985,24 @@ printf("%.d\n", --x); 8 */
 		long long *p = (long long*)calloc(80, sizeof(long long));
 		for(long long i=0; i<10; i++) p[i]=i+1;
 		long long *q= p+5;
-		printf("%d\n", *(q-1) + *(q+1));
+		printf("%d\n", *(q-1) + *(q+1)); // 4 6  p[4] and p[6]
 
 	*/
 
 	//6. answer: -8
 	/*
 		double* p=(double*)calloc(100, sizeof(long long));
-		printf("%d\n", (int*)(p+2) - (int*)(p+6));
+		printf("%d\n", (int*)(p+2) - (int*)(p+6));  //4 * 8 / 4 = -8
 
 	*/
 
 	//7. answer: 12
 	/*
 		long long *p = (long long*)calloc(80, sizeof(long long));
-		printf("%d\n",(short int*)(p+4) - (short int*)(p+1));
-
+		printf("%d\n",(short int*)(p+4) - (short int*)(p+1)); // 3 * 8 / 2 = 12
 	*/
 
-	//8. answer: 8
+	//8. answer: 8 ???
 	//What is the output for the next code(for 64-bit architecture)
 	/*
 		int* p= (int*)malloc(100);
@@ -2059,7 +2058,7 @@ printf("%.d\n", --x); 8 */
 			int x,y,z;
 		};
 		struct Point* p=(struct Point*)calloc(10, sizeof(Point));
-		printf("%d", (char*)&p[2] - (char*)&p[5]);
+		printf("%d", (char*)&p[2] - (char*)&p[5]); // 2 - 5 vur size of struct  =  sizeof(Point)  o da olur  - 3* 12/1
 	*/
 
 	//13. answer: A
@@ -2100,6 +2099,10 @@ printf("%.d\n", --x); 8 */
 			int x,y,z;
 		}p[10];
 		printf("%d\n", (short int *)&p[4].y - (short int *)&p[2].z);
+
+		2. x y z
+		3. x y z
+		4. x y z
 	*/
 
 	//17.answer: 32
@@ -2118,7 +2121,11 @@ printf("%.d\n", --x); 8 */
 		struct Point{
 			int x,y,z;
 		}p[10];
-		printf("%d\n", (char *)&p[5].x - (char *)&p[2].z);
+		printf("%d\n", (char *)&p[5].x - (char *)&p[2].z); // 7 * size of one intiger it is equal 4 | 7 * 4=8
+		2.x y z
+		3.x y z
+		4.x y z
+		5.x y z
 	*/
 
 #pragma endregion
