@@ -1206,12 +1206,20 @@ int main() {
 
 	//--------------------------Week-11_Simple-Quiz----------------------------------//
 
+	//------------NOTE-------------//
+
+	//*ptr++  => pass to the next variable
+	// ptr++  => pass to the next variable
+	//(*ptr)++  => increase value
+	//*ptr-=2   => decrease value
+
+	//-------------------------------//
 
 	//1. answer: r
 	// for "c" we calculate / take just the number that given, brifly 5th number (calculate from 0- first element)
 	/*
 	char m[] = "UniversityADA";
-	printf("%c", *(m+5));
+	printf("%c", *(m+5)); // not different form m[5]
 	*/
 
 	//2. answer: x = 4, y = 2 cvb: 4,2
@@ -1226,6 +1234,7 @@ int main() {
 	*/
 
 	//3. answer: 8
+	//  verilen size da olan seyin icine ne qeder verilmis size li variable yerlesdirmek olar onu tapiriq
 	//birinci biz d ve b ni p1 p2 ye veririk, sonra bir birinden cixilir b ve d int olduguna gore 4 e vurulur printf de char olduugna gore de 1 e bolunur
 	/*
 	int a = 2, b = 3, c = 4, d = 5;
@@ -1236,7 +1245,7 @@ int main() {
 	*/
 
 	//4. answer: 1
-	// burda ilk ptr inde x- mertebe 2 vahid azaldir, menasi ptr=ptr-2 ama sonraki ise hemin memory adresindeki vaueni 2 vahid azaldir
+	// burda ilk ptr inde x 2 vahid azaldir, menasi ptr=ptr-2 ama sonraki ise hemin memory adresindeki vaueni 2 vahid azaldir
 	/*
 	int a = 2, b = 3, c = 4, d = 5;
 	int* ptr;
@@ -1328,7 +1337,7 @@ int main() {
 	*/
 
 	//13. answer:10
-	// arrr in 0 ci elementinden basdayir yeni U dan ta ki NULL u gorene qeder X i artirir bu da strlen in duzsutudu eslinde
+	// arrr in 0 ci elementinden basdayir yeni U dan ta ki NULL u gorene qeder X i artirir bu da strlen in acilisidi demek olar eslinde
 	/*
 	char m[100] = "University";
 	char* p;
@@ -1410,14 +1419,6 @@ int main() {
 	printf("%d", *ptr);
 	*/
 
-	//------------NOTE-------------//
-
-	//*ptr++  => pass to the next variable
-	// ptr++  => pass to the next variable
-	//(*ptr)++  => increase value
-	//*ptr-=2   => decrease value
-
-	//-------------------------------//
 
 
 
@@ -1450,8 +1451,8 @@ int main() {
 	/*
 	union test{
 	long long x;
-	char arr[6];
-	int y;
+	char arr[10];
+	int y, x, Z;
 	};
 	printf("%d", sizeof(test));
 	*/
@@ -1496,13 +1497,21 @@ int main() {
 	};
 
 	struct Point *p = (struct Point*)calloc(10, sizeof(Point));
-	printf("%d", (char*)&p[5] - (char*)&p[2]);
+	printf("%d", (char*)&p[5] - (char*)&p[2]); // 8 i vururq cunki orda sende bir line da iki int var ve heresi 4 size goturur
+
+	SOMETHING LIKE:
+	2. int x int y  // bu line in size edir 8
+	3. int x int y  // bu line in size edir 8
+	4. int x int y  // bu line in size edir 8
+	5. int x int y  // bu line in size edir 8
+
+	ve bizden de  5 ci setrden 2 ci setire kimi ne qeder size var onu tap deyir onu da 5 - 2 * 8 edirik
 	*/
 
 	//8. answer: A
 
 	/*
-	Which of the following accesses a variable in strucure *b?
+	Which of the following accesses a variable in strucure *b? // pointere gore A
 
 	A) b->var
 	B) b.var
@@ -1568,7 +1577,7 @@ int main() {
 
 	*/
 
-	//13. answer: -24
+	//13. answer: -3
 
 	/*
 	struct Point{
