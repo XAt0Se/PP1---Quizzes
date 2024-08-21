@@ -15,7 +15,7 @@ int main() {
 
 	//1. answer: 6
 	/*
-	printf("%d", printf(""1 2 3\n));
+	printf("%d", printf("1 2 3\n"));
 	*/
 
 	//2. answer:1.254
